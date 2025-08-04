@@ -15,7 +15,7 @@ export default function AboutSection() {
             <img 
               src={stevenPhoto} 
               alt="Steven Benjamin - Senior Full Stack Developer" 
-              className="w-full aspect-square object-cover rounded-2xl shadow-xl" 
+              className="w-full aspect-square object-contain rounded-2xl shadow-xl bg-gray-100" 
             />
           </motion.div>
           
