@@ -86,13 +86,16 @@ export default function HeroSection() {
           <div 
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
-            className="cursor-pointer"
+            className="cursor-pointer space-y-4"
           >
             <img 
               src={isHovered ? playskoolComputerBack : playskoolComputer} 
               alt={isHovered ? "Playskool computer instructions - how it all works" : "Vintage Playskool computer - where it all began"} 
               className="w-full h-auto object-contain rounded-2xl shadow-2xl transition-opacity duration-300" 
             />
+            <p className="text-sm text-center text-slate-400 italic transition-opacity duration-300">
+              {isHovered ? "Playskool computer instructions - how it all works" : "Vintage Playskool computer - where it all began"}
+            </p>
           </div>
         </div>
       </div>
