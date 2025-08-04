@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Mail, Globe, Phone } from "lucide-react";
+import playskoolComputer from "@assets/playskool_computer_front_shadow_1754275521975.jpg";
 
 export default function HeroSection() {
   const handleContactClick = () => {
@@ -80,7 +81,7 @@ export default function HeroSection() {
           
           <div>
             <img 
-              src="@assets/playskool_computer_front_shadow_1754275521975.jpg" 
+              src={playskoolComputer} 
               alt="Vintage Playskool computer - where it all began" 
               className="w-full h-auto object-contain rounded-2xl shadow-2xl" 
             />
