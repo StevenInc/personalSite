@@ -148,20 +148,6 @@ export default function ExperienceSection() {
       ],
       technologies: ["ColdFusion", "Director", "HTML", "CSS", "JavaScript", "SQL Server", "IIS"],
       accentColor: "var(--portfolio-purple)"
-    },
-    {
-      title: "Mobile App Developer",
-      company: "Air Graffiti",
-      period: "2009 – 2010",
-      description: [
-        "Developed innovative mobile graffiti application with dual-mode functionality",
-        "Built 'Painter' mode enabling users to create digital graffiti art using touch interface",
-        "Implemented 'Viewer' mode for discovering and exploring graffiti artwork by location",
-        "Created location-based art sharing platform connecting street artists digitally",
-        "Designed intuitive mobile UI optimized for creative expression and social discovery"
-      ],
-      technologies: ["Mobile Development", "iOS", "Location Services", "Touch Interface", "Social Platform"],
-      accentColor: "var(--portfolio-purple)"
     }
   ];
 
