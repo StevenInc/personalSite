@@ -82,7 +82,7 @@ export default function ExperienceSection() {
     {
       title: "Senior Full Stack Developer",
       company: "Vemma.com",
-      period: "2007 – 2011",
+      period: "2008 – 2012",
       description: [
         "Led development of multiple web-based ecommerce platform for sites targeted to international countries",
         "Architected and implemented a custom multi-level chart to assist new recruits",
