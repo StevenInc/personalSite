@@ -3,6 +3,7 @@ import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { insertContactSubmissionSchema } from "@shared/schema";
 import { ZodError } from "zod";
+import { sendEmail, createContactEmailHTML } from "./email";
 
 export async function registerRoutes(app: Express): Promise<Server> {
   // Contact form submission endpoint
@@ -12,13 +13,31 @@ export async function registerRoutes(app: Express): Promise<Server> {
       
       const submission = await storage.createContactSubmission(validatedData);
       
-      // In a real application, you would send an email here
-      // For now, we'll just log the submission and return success
+      // Send email notification
+      const emailHTML = createContactEmailHTML(
+        submission.name,
+        submission.email,
+        submission.subject,
+        submission.message
+      );
+
+      const emailSent = await sendEmail({
+        from: 'onboarding@resend.dev',
+        to: 'steven@stevenbenjamin.com',
+        subject: `Portfolio Contact: ${submission.subject}`,
+        html: emailHTML,
+        replyTo: submission.email
+      });
+
+      if (!emailSent) {
+        console.warn("Email failed to send, but form submission was saved");
+      }
+
       console.log("Contact form submission received:", {
         name: submission.name,
         email: submission.email,
         subject: submission.subject,
-        message: submission.message.substring(0, 100) + "..."
+        emailSent: emailSent
       });
 
       res.status(201).json({ 
