@@ -47,7 +47,7 @@ export default function SkillsSection() {
             <img 
               src={programmingLanguagesChart}
               alt="Most in-demand programming languages chart showing Python, Java, JavaScript and other popular languages" 
-              className="w-full aspect-square object-cover rounded-2xl shadow-xl" 
+              className="w-full h-auto object-contain rounded-2xl shadow-xl" 
             />
           </div>
           
