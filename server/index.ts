@@ -7,6 +7,9 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
+// Serve favicon with high priority - before any other middleware
+app.use('/favicon.ico', express.static(path.join(process.cwd(), 'favicon.ico')));
+
 app.use((req, res, next) => {
   const start = Date.now();
   const path = req.path;
@@ -37,14 +40,7 @@ app.use((req, res, next) => {
   next();
 });
 
-// Add favicon routes before other middleware to ensure they're handled first
 
-app.get('/favicon.ico', (req, res) => {
-  const faviconPath = path.join(process.cwd(), 'favicon.ico');
-  res.setHeader('Content-Type', 'image/x-icon');
-  res.setHeader('Cache-Control', 'public, max-age=86400');
-  res.sendFile(faviconPath);
-});
 
 
 
