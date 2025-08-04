@@ -14,7 +14,7 @@ export default function ExperienceSection() {
         "Leveraged Cursor AI for test authoring, intelligent refactors, and enhanced team productivity",
         "Mentored junior developers and fostered collaborative team culture across development cycles"
       ],
-      technologies: ["Vue.js", "ColdFusion", "Playwright", "Cursor AI"],
+      technologies: ["Vue.js", "JavaScript (ES6+)", "ColdFusion", "Playwright", "Cursor AI"],
       accentColor: "var(--portfolio-accent)"
     },
     {
