@@ -97,13 +97,13 @@ export default function ExperienceSection() {
       company: "American Express Publishing (Food & Wine Magazine)",
       period: "2007 – 2009",
       description: [
-        "Led development of multiple web-based ecommerce platform for sites targeted to international countries",
-        "Architected and implemented a custom multi-level chart to assist new recruits",
-        "Developed an in-house accounting tools",
-        "Worked with the web dev team on their new site design",
+        "Developed a ColdFusion driven app to convert existing recipes to recipeML",
+        "Worked with the web dev on their new site design",
+        "Led the completion of an online wine pairing tool to match wines to existing recipes",
+        "It also allowed users to upload recipes and match suggested wines using ColdFusion. There were two versions, one built with ExtJS and another with native Javascript",
         "Utilized ColdFusion and the Fusebox framework for modularity, reusability, and long-term code maintainability"
       ],
-      technologies: ["ColdFusion", "Fusebox", "JavaScript", "HTML", "CSS", "SQL Server"],
+      technologies: ["ColdFusion", "Fusebox", "ExtJS", "JavaScript", "HTML", "CSS", "SQL Server"],
       accentColor: "var(--portfolio-success)"
     },
     {
