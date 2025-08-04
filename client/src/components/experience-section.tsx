@@ -32,6 +32,19 @@ export default function ExperienceSection() {
       accentColor: "var(--portfolio-success)"
     },
     {
+      title: "Developer", // Please provide your exact title
+      company: "Atomic Imaging",
+      period: "YYYY – YYYY", // Please provide the dates
+      description: [
+        // Please provide your key responsibilities and achievements at Atomic Imaging
+        "Developed and maintained imaging software applications",
+        "Collaborated with cross-functional teams on technical solutions",
+        "Built strong client relationships and delivered quality results"
+      ],
+      technologies: ["Technology1", "Technology2"], // Please provide the technologies you used
+      accentColor: "var(--portfolio-accent)"
+    },
+    {
       title: "Latency Reduction Specialist / Frontend Developer",
       company: "Amazon (Project Junglee)",
       period: "Jan 2013 – Dec 2014",
