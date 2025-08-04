@@ -347,59 +347,57 @@ export default function ExperienceSection() {
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <div className="flex flex-col lg:flex-row gap-6">
-              {/* Image on the left */}
-              <div className="lg:w-1/3 flex-shrink-0">
-                <img 
-                  src={mightyMugsScreenshot}
-                  alt="Mighty Mugs personalized photo mug e-commerce platform with 3D preview technology"
-                  className="w-full h-auto rounded-lg border border-slate-600 object-contain experience-image"
-                />
+            {/* Header with title and date */}
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+              <div>
+                <h4 className="text-2xl font-bold text-[var(--portfolio-accent)]">Web Developer</h4>
+                <p className="text-lg font-semibold text-[var(--portfolio-warning)]">Mighty Mugs</p>
               </div>
-              
-              {/* Content on the right */}
-              <div className="lg:w-2/3">
-                <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-                  <div>
-                    <h4 className="text-2xl font-bold text-[var(--portfolio-accent)]">Web Developer</h4>
-                    <p className="text-lg font-semibold text-[var(--portfolio-warning)]">Mighty Mugs</p>
-                  </div>
-                  <div className="text-[var(--portfolio-text-muted)] flex items-center">
-                    <Calendar className="h-4 w-4 mr-2" />
-                    <span>1999 – 2001</span>
-                  </div>
-                </div>
-                
-                <ul className="space-y-2 mb-4">
-                  <li className="text-[var(--portfolio-text-muted)] flex items-start">
-                    <span className="text-[var(--portfolio-warning)] mr-2">•</span>
-                    Developed personalized photo mug e-commerce platform with 3D preview technology
-                  </li>
-                  <li className="text-[var(--portfolio-text-muted)] flex items-start">
-                    <span className="text-[var(--portfolio-warning)] mr-2">•</span>
-                    Built custom mug design interface allowing users to upload and position photos
-                  </li>
-                  <li className="text-[var(--portfolio-text-muted)] flex items-start">
-                    <span className="text-[var(--portfolio-warning)] mr-2">•</span>
-                    Implemented 3D animated preview system showing exact mug appearance before purchase
-                  </li>
-                  <li className="text-[var(--portfolio-text-muted)] flex items-start">
-                    <span className="text-[var(--portfolio-warning)] mr-2">•</span>
-                    Created complete e-commerce workflow from design to order processing and fulfillment
-                  </li>
-                </ul>
-                
-                <div className="flex flex-wrap gap-2">
-                  {["HTML", "CSS", "JavaScript", "E-commerce", "3D Graphics"].map((tech, techIndex) => (
-                    <span 
-                      key={techIndex}
-                      className="px-3 py-1 bg-[var(--portfolio-warning)]/20 text-[var(--portfolio-warning)] rounded-full text-sm border border-[var(--portfolio-warning)]/30"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
+              <div className="text-[var(--portfolio-text-muted)] flex items-center">
+                <Calendar className="h-4 w-4 mr-2" />
+                <span>1999 – 2001</span>
               </div>
+            </div>
+            
+            {/* Description */}
+            <ul className="space-y-2 mb-4">
+              <li className="text-[var(--portfolio-text-muted)] flex items-start">
+                <span className="text-[var(--portfolio-warning)] mr-2">•</span>
+                Developed personalized photo mug e-commerce platform with 3D preview technology
+              </li>
+              <li className="text-[var(--portfolio-text-muted)] flex items-start">
+                <span className="text-[var(--portfolio-warning)] mr-2">•</span>
+                Built custom mug design interface allowing users to upload and position photos
+              </li>
+              <li className="text-[var(--portfolio-text-muted)] flex items-start">
+                <span className="text-[var(--portfolio-warning)] mr-2">•</span>
+                Implemented 3D animated preview system showing exact mug appearance before purchase
+              </li>
+              <li className="text-[var(--portfolio-text-muted)] flex items-start">
+                <span className="text-[var(--portfolio-warning)] mr-2">•</span>
+                Created complete e-commerce workflow from design to order processing and fulfillment
+              </li>
+            </ul>
+            
+            {/* Technologies */}
+            <div className="flex flex-wrap gap-2 mb-4">
+              {["HTML", "CSS", "JavaScript", "E-commerce", "3D Graphics"].map((tech, techIndex) => (
+                <span 
+                  key={techIndex}
+                  className="px-3 py-1 bg-[var(--portfolio-warning)]/20 text-[var(--portfolio-warning)] rounded-full text-sm border border-[var(--portfolio-warning)]/30"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
+
+            {/* Image at bottom */}
+            <div className="flex justify-center">
+              <img 
+                src={mightyMugsScreenshot}
+                alt="Mighty Mugs personalized photo mug e-commerce platform with 3D preview technology"
+                className="w-full max-w-md h-auto rounded-lg border border-slate-600 object-contain experience-image"
+              />
             </div>
           </motion.div>
         </motion.div>
