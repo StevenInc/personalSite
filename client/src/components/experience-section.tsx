@@ -39,6 +39,19 @@ export default function ExperienceSection() {
       accentColor: "var(--portfolio-accent)"
     },
     {
+      title: "Full Stack Developer (Team Lead)",
+      company: "Judicial Council of California",
+      period: "Aug 2014 – Dec 2016",
+      description: [
+        "Led cross-functional development team in creating an asset management portal consolidating legacy systems",
+        "Built ColdFusion 11 / Oracle 11g backend using FW/1 (Framework One)",
+        "Introduced and mentored team in client-side MVC, OO JavaScript, and Revealing Module Patterns",
+        "Championed best practices for modularization, UX, and maintainability"
+      ],
+      technologies: ["HTML5", "CSS3", "JavaScript", "ColdFusion 11", "Oracle 11g", "FW/1", "Subversion"],
+      accentColor: "var(--portfolio-purple)"
+    },
+    {
       title: "Latency Reduction Specialist / Frontend Developer",
       company: "Amazon (Project Junglee)",
       period: "Jan 2013 – Dec 2014",
