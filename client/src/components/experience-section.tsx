@@ -64,7 +64,7 @@ export default function ExperienceSection() {
     {
       title: "Frontend Developer",
       company: "Apartments.com",
-      period: "2003 (6-month contract)",
+      period: "2016 (6-month contract)",
       description: [
         "Developed the original interactive map feature allowing users to browse listings by region",
         "Integrated Elasticsearch for fast geographic search and Redis for caching and performance",
