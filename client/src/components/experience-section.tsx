@@ -79,6 +79,19 @@ export default function ExperienceSection() {
       accentColor: "var(--portfolio-success)"
     },
     {
+      title: "Senior Full Stack Developer",
+      company: "Vemma.com",
+      period: "2007 – 2011",
+      description: [
+        "Led development of multiple web-based ecommerce platform for sites targeted to international countries",
+        "Architected and implemented a custom multi-level chart to assist new recruits",
+        "Developed an in-house accounting tools",
+        "Utilized ColdFusion and the Fusebox framework for modularity, reusability, and long-term code maintainability"
+      ],
+      technologies: ["ColdFusion", "Fusebox", "JavaScript", "HTML", "CSS", "SQL Server"],
+      accentColor: "var(--portfolio-warning)"
+    },
+    {
       title: "Full Stack Developer",
       company: "Incapital Holdings (now Insperex)",
       period: "2003 – 2007",
