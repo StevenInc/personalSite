@@ -98,6 +98,15 @@
     transform: translateY(-8px);
   }
   
+  .experience-image {
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+  }
+  
+  .portfolio-card:hover .experience-image {
+    opacity: 1.0;
+  }
+  
   .timeline-item::before {
     content: '';
     position: absolute;
