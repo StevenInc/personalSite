@@ -80,9 +80,9 @@ export default function HeroSection() {
           
           <div>
             <img 
-              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=600" 
-              alt="Professional developer workspace with modern setup" 
-              className="w-full aspect-square object-cover rounded-2xl shadow-2xl" 
+              src="@assets/playskool_computer_front_shadow_1754275521975.jpg" 
+              alt="Vintage Playskool computer - where it all began" 
+              className="w-full h-auto object-contain rounded-2xl shadow-2xl" 
             />
           </div>
         </div>
