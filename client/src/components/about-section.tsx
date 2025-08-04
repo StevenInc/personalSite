@@ -5,7 +5,7 @@ export default function AboutSection() {
   return (
     <section id="about" className="py-20 bg-[var(--portfolio-darker)]/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-3 gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -20,7 +20,7 @@ export default function AboutSection() {
           </motion.div>
           
           <motion.div 
-            className="space-y-6"
+            className="space-y-6 md:col-span-2"
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
