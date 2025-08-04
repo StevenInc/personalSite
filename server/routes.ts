@@ -1,11 +1,17 @@
 import type { Express } from "express";
 import { createServer, type Server } from "http";
+import path from "path";
 import { storage } from "./storage";
 import { insertContactSubmissionSchema } from "@shared/schema";
 import { ZodError } from "zod";
 import { sendEmail, createContactEmailHTML } from "./email";
 
 export async function registerRoutes(app: Express): Promise<Server> {
+  // Serve favicon explicitly
+  app.get('/favicon.ico', (req, res) => {
+    res.sendFile(path.resolve(import.meta.dirname, '..', 'client', 'public', 'favicon.ico'));
+  });
+
   // Contact form submission endpoint
   app.post("/api/contact", async (req, res) => {
     try {
