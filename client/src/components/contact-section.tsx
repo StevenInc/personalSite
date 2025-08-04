@@ -12,6 +12,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { Mail, Phone, Globe, MapPin, Send } from "lucide-react";
 import type { InsertContactSubmission } from "@shared/schema";
+import contactImage from "@assets/contact-communication-image.jpg";
 
 export default function ContactSection() {
   const { toast } = useToast();
@@ -111,8 +112,8 @@ export default function ContactSection() {
           >
             <div>
               <img 
-                src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=600" 
-                alt="Professional networking and collaboration in modern workspace" 
+                src={contactImage} 
+                alt="Dog with tin can phone representing clear communication and connection" 
                 className="w-full aspect-square object-cover rounded-2xl shadow-xl" 
               />
             </div>
