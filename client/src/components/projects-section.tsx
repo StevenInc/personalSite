@@ -40,14 +40,16 @@ export default function ProjectsSection() {
     {
       title: "LiveStorefronts.com",
       description: "Real-time inventory posting platform enabling phone-based uploads with Google Maps integration for location-based business discovery.",
-      image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=300",
+      image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&ixid=MnwxMijA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=300",
       alt: "Mobile app interface showing inventory management features",
       year: "2013",
       type: "Archive",
       features: [
-        "Built platform for real-time inventory posts via phone",
-        "Google Maps integration with location services",
-        "Voice and photo upload capabilities"
+        "Developed mobile merchant app enabling instant inventory posting with camera integration",
+        "Built 'Snap, Speak & Send' functionality for rapid product listing and management",
+        "Created responsive web storefronts that sync with mobile app inventory in real-time",
+        "Implemented cross-platform solution supporting both Google Play and App Store deployment",
+        "Designed intuitive workflow allowing merchants to publish inventory in under a minute"
       ],
       technologies: ["Mobile", "Google Maps", "Real-time"],
       link: "https://photos.app.goo.gl/EF2bBFGehtehzC9i8",
