@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import stevenPhoto from "@assets/steven-photo.png";
+import stevenPhoto from "@assets/steven_benjamin_thought_bubble_1754271517793.png";
 
 export default function AboutSection() {
   return (
