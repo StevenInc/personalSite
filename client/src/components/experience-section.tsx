@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Calendar } from "lucide-react";
+import timesheetsScreenshot from "@assets/Screenshot 2025-08-03 at 8.53.28 PM_1754279660221.png";
 
 export default function ExperienceSection() {
   const experiences = [
@@ -132,35 +133,85 @@ export default function ExperienceSection() {
                 viewport={{ once: true }}
               >
                 <div className="bg-slate-800 rounded-lg p-6 shadow-xl hover:shadow-2xl transition-all portfolio-card">
-                  <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-                    <div>
-                      <h3 className="text-2xl font-bold text-[var(--portfolio-accent)]">{experience.title}</h3>
-                      <p className="text-lg font-semibold" style={{ color: experience.accentColor }}>{experience.company}</p>
+                  {/* Special layout for Timesheets.com with image */}
+                  {experience.company === "Timesheets.com" ? (
+                    <div className="flex flex-col lg:flex-row gap-6">
+                      {/* Image on the left */}
+                      <div className="lg:w-1/3 flex-shrink-0">
+                        <img 
+                          src={timesheetsScreenshot}
+                          alt="Timesheets.com scheduling interface showing calendar view"
+                          className="w-full h-auto rounded-lg border border-slate-600 object-contain"
+                        />
+                      </div>
+                      
+                      {/* Content on the right */}
+                      <div className="lg:w-2/3">
+                        <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                          <div>
+                            <h3 className="text-2xl font-bold text-[var(--portfolio-accent)]">{experience.title}</h3>
+                            <p className="text-lg font-semibold" style={{ color: experience.accentColor }}>{experience.company}</p>
+                          </div>
+                          <div className="text-[var(--portfolio-text-muted)] flex items-center">
+                            <Calendar className="h-4 w-4 mr-2" />
+                            {experience.period}
+                          </div>
+                        </div>
+                        <div className="space-y-3 text-slate-300">
+                          {experience.description.map((point, pointIndex) => (
+                            <p key={pointIndex}>• {point}</p>
+                          ))}
+                        </div>
+                        <div className="flex flex-wrap gap-2 mt-4">
+                          {experience.technologies.map((tech) => (
+                            <span 
+                              key={tech}
+                              className="px-3 py-1 rounded-full text-sm"
+                              style={{ 
+                                backgroundColor: `${experience.accentColor}20`, 
+                                color: experience.accentColor 
+                              }}
+                            >
+                              {tech}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
                     </div>
-                    <div className="text-[var(--portfolio-text-muted)] flex items-center">
-                      <Calendar className="h-4 w-4 mr-2" />
-                      {experience.period}
-                    </div>
-                  </div>
-                  <div className="space-y-3 text-slate-300">
-                    {experience.description.map((point, pointIndex) => (
-                      <p key={pointIndex}>• {point}</p>
-                    ))}
-                  </div>
-                  <div className="flex flex-wrap gap-2 mt-4">
-                    {experience.technologies.map((tech) => (
-                      <span 
-                        key={tech}
-                        className="px-3 py-1 rounded-full text-sm"
-                        style={{ 
-                          backgroundColor: `${experience.accentColor}20`, 
-                          color: experience.accentColor 
-                        }}
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
+                  ) : (
+                    // Standard layout for other experiences
+                    <>
+                      <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <div>
+                          <h3 className="text-2xl font-bold text-[var(--portfolio-accent)]">{experience.title}</h3>
+                          <p className="text-lg font-semibold" style={{ color: experience.accentColor }}>{experience.company}</p>
+                        </div>
+                        <div className="text-[var(--portfolio-text-muted)] flex items-center">
+                          <Calendar className="h-4 w-4 mr-2" />
+                          {experience.period}
+                        </div>
+                      </div>
+                      <div className="space-y-3 text-slate-300">
+                        {experience.description.map((point, pointIndex) => (
+                          <p key={pointIndex}>• {point}</p>
+                        ))}
+                      </div>
+                      <div className="flex flex-wrap gap-2 mt-4">
+                        {experience.technologies.map((tech) => (
+                          <span 
+                            key={tech}
+                            className="px-3 py-1 rounded-full text-sm"
+                            style={{ 
+                              backgroundColor: `${experience.accentColor}20`, 
+                              color: experience.accentColor 
+                            }}
+                          >
+                            {tech}
+                          </span>
+                        ))}
+                      </div>
+                    </>
+                  )}
                 </div>
               </motion.div>
             ))}
