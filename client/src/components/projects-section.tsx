@@ -175,7 +175,7 @@ export default function ProjectsSection() {
                     className="inline-flex items-center gap-2 px-4 py-2 bg-[var(--portfolio-success)] text-white rounded-lg hover:bg-[var(--portfolio-success)]/80 transition-colors font-medium"
                   >
                     <ExternalLink className="h-4 w-4" />
-                    View Live Demo
+                    View Gallery
                   </a>
                 </div>
               )}
