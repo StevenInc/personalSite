@@ -153,14 +153,11 @@ export default function ExperienceSection() {
         </motion.div>
         
         <div className="relative">
-          {/* Timeline line */}
-          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-[var(--portfolio-accent)]"></div>
-          
           <div className="space-y-12">
             {experiences.map((experience, index) => (
               <motion.div 
                 key={`${experience.company}-${index}`}
-                className="relative pl-20 timeline-item"
+                className="relative"
                 initial={{ opacity: 0, x: 20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, delay: index * 0.2 }}
