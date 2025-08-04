@@ -10,6 +10,7 @@ import atomicImagingScreenshot from "@assets/atomic-imaging-screenshot.png";
 import judicialCouncilScreenshot from "@assets/judicial-council-screenshot.png";
 import vemmaScreenshot from "@assets/vemma-screenshot.png";
 import foodWineScreenshot from "@assets/food-wine-screenshot.png";
+import mightyMugsScreenshot from "@assets/mighty-mugs-screenshot.png";
 
 export default function ExperienceSection() {
   const experiences = [
@@ -146,6 +147,19 @@ export default function ExperienceSection() {
       ],
       technologies: ["ColdFusion", "Director", "HTML", "CSS", "JavaScript", "SQL Server", "IIS"],
       accentColor: "var(--portfolio-purple)"
+    },
+    {
+      title: "Web Developer",
+      company: "Mighty Mugs",
+      period: "1999 – 2001",
+      description: [
+        "Developed personalized photo mug e-commerce platform with 3D preview technology",
+        "Built custom mug design interface allowing users to upload and position photos",
+        "Implemented 3D animated preview system showing exact mug appearance before purchase",
+        "Created complete e-commerce workflow from design to order processing and fulfillment"
+      ],
+      technologies: ["HTML", "CSS", "JavaScript", "E-commerce", "3D Graphics"],
+      accentColor: "var(--portfolio-warning)"
     }
   ];
 
@@ -180,7 +194,7 @@ export default function ExperienceSection() {
               >
                 <div className="bg-slate-800 rounded-lg p-6 shadow-xl hover:shadow-2xl transition-all portfolio-card">
                   {/* Special layout for companies with images */}
-                  {(experience.company === "Timesheets.com" || experience.company === "Amazon (Project Junglee)" || experience.company === "The Gap" || experience.company === "Incapital Holdings (now Insperex)" || experience.company === "Apartments.com" || experience.company === "American Bar Association" || experience.company === "Atomic Imaging" || experience.company === "Judicial Council of California" || experience.company === "Vemma.com" || experience.company === "American Express Publishing (Food & Wine Magazine)") ? (
+                  {(experience.company === "Timesheets.com" || experience.company === "Amazon (Project Junglee)" || experience.company === "The Gap" || experience.company === "Incapital Holdings (now Insperex)" || experience.company === "Apartments.com" || experience.company === "American Bar Association" || experience.company === "Atomic Imaging" || experience.company === "Judicial Council of California" || experience.company === "Vemma.com" || experience.company === "American Express Publishing (Food & Wine Magazine)" || experience.company === "Mighty Mugs") ? (
                     <div className="flex flex-col lg:flex-row gap-6">
                       {/* Image on the left */}
                       <div className="lg:w-1/3 flex-shrink-0">
@@ -194,6 +208,7 @@ export default function ExperienceSection() {
                                experience.company === "Judicial Council of California" ? judicialCouncilScreenshot :
                                experience.company === "Vemma.com" ? vemmaScreenshot :
                                experience.company === "American Express Publishing (Food & Wine Magazine)" ? foodWineScreenshot :
+                               experience.company === "Mighty Mugs" ? mightyMugsScreenshot :
                                atomicImagingScreenshot}
                           alt={experience.company === "Timesheets.com" ? 
                             "Timesheets.com scheduling interface showing calendar view" : 
@@ -213,6 +228,8 @@ export default function ExperienceSection() {
                             "Vemma e-commerce platform featuring health products and international marketing" :
                             experience.company === "American Express Publishing (Food & Wine Magazine)" ?
                             "Food & Wine Magazine website showing holiday recipes, cooking guides, and wine pairings" :
+                            experience.company === "Mighty Mugs" ?
+                            "Mighty Mugs personalized photo mug e-commerce platform with 3D preview technology" :
                             "Atomic Imaging Halloween-themed interactive website with multimedia content"}
                           className={`w-full h-auto rounded-lg border border-slate-600 object-contain experience-image ${experience.company === "Timesheets.com" ? "current-position" : ""}`}
                         />
