@@ -84,7 +84,7 @@ export default function ExperienceSection() {
       company: "Vemma.com",
       period: "2008 – 2012",
       description: [
-        "Led development of multiple web-based ecommerce platform for sites targeted to international countries",
+        "Development of multiple web-based ecommerce platform for sites targeted to international countries",
         "Architected and implemented a custom multi-level chart to assist new recruits",
         "Developed an in-house accounting tools",
         "Utilized ColdFusion and the Fusebox framework for modularity, reusability, and long-term code maintainability"
