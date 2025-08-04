@@ -46,12 +46,7 @@ app.get('/favicon.ico', (req, res) => {
   res.sendFile(faviconPath);
 });
 
-app.get('/favicon.svg', (req, res) => {
-  const faviconPath = path.join(process.cwd(), 'favicon.ico');
-  res.setHeader('Content-Type', 'image/x-icon');
-  res.setHeader('Cache-Control', 'public, max-age=86400');
-  res.sendFile(faviconPath);
-});
+
 
 (async () => {
   const server = await registerRoutes(app);
