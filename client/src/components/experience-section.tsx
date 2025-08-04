@@ -13,20 +13,6 @@ import vemmaScreenshot from "@assets/vemma-screenshot.png";
 export default function ExperienceSection() {
   const experiences = [
     {
-      title: "Senior Front-End Developer",
-      company: "The Gap",
-      period: "Mar 2017 – Apr 2019",
-      description: [
-        "Angular (v2+) development across multiple Gap Inc. brands",
-        "Refactored legacy JavaScript into modular components with TypeScript & RxJS",
-        "Spearheaded mobile-first and WCAG-compliant improvements across major UIs",
-        "Led mentorship programs for junior developers and established collaborative code review processes",
-        "Built strong cross-functional relationships between design, product, and engineering teams"
-      ],
-      technologies: ["Angular", "TypeScript", "RxJS", "SCSS"],
-      accentColor: "var(--portfolio-success)"
-    },
-    {
       title: "Senior Full Stack Developer",
       company: "Timesheets.com",
       period: "Jan 2017 – Present",
@@ -39,6 +25,20 @@ export default function ExperienceSection() {
       ],
       technologies: ["Vue.js", "JavaScript (ES6+)", "ColdFusion", "ColdBox", "Playwright", "Cursor AI"],
       accentColor: "var(--portfolio-accent)"
+    },
+    {
+      title: "Senior Front-End Developer",
+      company: "The Gap",
+      period: "2016",
+      description: [
+        "Angular (v2+) development across multiple Gap Inc. brands",
+        "Refactored legacy JavaScript into modular components with TypeScript & RxJS",
+        "Spearheaded mobile-first and WCAG-compliant improvements across major UIs",
+        "Led mentorship programs for junior developers and established collaborative code review processes",
+        "Built strong cross-functional relationships between design, product, and engineering teams"
+      ],
+      technologies: ["Angular", "TypeScript", "RxJS", "SCSS"],
+      accentColor: "var(--portfolio-success)"
     },
     {
       title: "Full Stack Developer (Team Lead)",
