@@ -79,7 +79,7 @@ export default function ExperienceSection() {
       accentColor: "var(--portfolio-success)"
     },
     {
-      title: "Senior Full Stack Developer",
+      title: "Full Stack Developer",
       company: "Incapital Holdings (now Insperex)",
       period: "2003 – 2007",
       description: [
