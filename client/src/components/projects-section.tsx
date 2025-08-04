@@ -64,9 +64,11 @@ export default function ProjectsSection() {
       year: "2013",
       type: "Demo",
       features: [
-        "Motion tracking with IR sensors",
-        "Real-time projection mapping",
-        "Interactive art installation framework"
+        "Developed innovative mobile graffiti application with dual-mode functionality",
+        "Built 'Painter' mode enabling users to create digital graffiti art using touch interface",
+        "Implemented 'Viewer' mode for discovering and exploring graffiti artwork by location",
+        "Created location-based art sharing platform connecting street artists digitally",
+        "Designed intuitive mobile UI optimized for creative expression and social discovery"
       ],
       technologies: ["Creative Tech", "Motion Tracking", "Interactive"],
       link: "https://www.youtube.com/watch?v=RSA9I3E_rE4",
