@@ -78,18 +78,13 @@ export default function HeroSection() {
             </div>
           </motion.div>
           
-          <motion.div 
-            className="animate-float"
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-          >
+          <div>
             <img 
               src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=600" 
               alt="Professional developer workspace with modern setup" 
-              className="w-full aspect-square object-cover rounded-2xl shadow-2xl hover:transform hover:scale-105 transition-all duration-300" 
+              className="w-full aspect-square object-cover rounded-2xl shadow-2xl" 
             />
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

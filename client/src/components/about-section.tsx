@@ -6,18 +6,13 @@ export default function AboutSection() {
     <section id="about" className="py-20 bg-[var(--portfolio-darker)]/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-3 gap-12 items-start">
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
+          <div>
             <img 
               src={stevenPhoto} 
               alt="Steven Benjamin - Senior Full Stack Developer" 
               className="w-full h-auto object-contain rounded-2xl shadow-xl" 
             />
-          </motion.div>
+          </div>
           
           <motion.div 
             className="space-y-6 md:col-span-2"

@@ -42,18 +42,13 @@ export default function SkillsSection() {
         </motion.div>
         
         <div className="grid md:grid-cols-2 gap-12">
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
+          <div>
             <img 
               src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=600" 
               alt="Abstract technology graphics with circuit patterns" 
               className="w-full aspect-square object-cover rounded-2xl shadow-xl" 
             />
-          </motion.div>
+          </div>
           
           <motion.div 
             className="space-y-8"
