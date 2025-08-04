@@ -177,19 +177,6 @@ export default function ExperienceSection() {
       ],
       technologies: ["Mobile Development", "iOS", "Location Services", "Touch Interface", "Social Platform"],
       accentColor: "var(--portfolio-purple)"
-    },
-    {
-      title: "Web Developer",
-      company: "Mighty Mugs",
-      period: "1999 – 2001",
-      description: [
-        "Developed personalized photo mug e-commerce platform with 3D preview technology",
-        "Built custom mug design interface allowing users to upload and position photos",
-        "Implemented 3D animated preview system showing exact mug appearance before purchase",
-        "Created complete e-commerce workflow from design to order processing and fulfillment"
-      ],
-      technologies: ["HTML", "CSS", "JavaScript", "E-commerce", "3D Graphics"],
-      accentColor: "var(--portfolio-warning)"
     }
   ];
 
@@ -224,7 +211,7 @@ export default function ExperienceSection() {
               >
                 <div className="bg-slate-800 rounded-lg p-6 shadow-xl hover:shadow-2xl transition-all portfolio-card">
                   {/* Special layout for companies with images */}
-                  {(experience.company === "Timesheets.com" || experience.company === "Amazon (Project Junglee)" || experience.company === "The Gap" || experience.company === "Incapital Holdings (now Insperex)" || experience.company === "Apartments.com" || experience.company === "American Bar Association" || experience.company === "Atomic Imaging" || experience.company === "Judicial Council of California" || experience.company === "Vemma.com" || experience.company === "American Express Publishing (Food & Wine Magazine)" || experience.company === "Live Storefronts" || experience.company === "Air Graffiti" || experience.company === "Mighty Mugs") ? (
+                  {(experience.company === "Timesheets.com" || experience.company === "Amazon (Project Junglee)" || experience.company === "The Gap" || experience.company === "Incapital Holdings (now Insperex)" || experience.company === "Apartments.com" || experience.company === "American Bar Association" || experience.company === "Atomic Imaging" || experience.company === "Judicial Council of California" || experience.company === "Vemma.com" || experience.company === "American Express Publishing (Food & Wine Magazine)" || experience.company === "Live Storefronts" || experience.company === "Air Graffiti") ? (
                     <div className="flex flex-col lg:flex-row gap-6">
                       {/* Image on the left */}
                       <div className="lg:w-1/3 flex-shrink-0">
@@ -240,7 +227,6 @@ export default function ExperienceSection() {
                                experience.company === "American Express Publishing (Food & Wine Magazine)" ? foodWineScreenshot :
                                experience.company === "Live Storefronts" ? liveStorefrontsScreenshot :
                                experience.company === "Air Graffiti" ? airGraffitiScreenshot :
-                               experience.company === "Mighty Mugs" ? mightyMugsScreenshot :
                                atomicImagingScreenshot}
                           alt={experience.company === "Timesheets.com" ? 
                             "Timesheets.com scheduling interface showing calendar view" : 
@@ -264,8 +250,6 @@ export default function ExperienceSection() {
                             "Live Storefronts mobile merchant app with Snap, Speak & Send inventory management system" :
                             experience.company === "Air Graffiti" ?
                             "Air Graffiti mobile app showing Painter and Viewer modes for digital street art creation" :
-                            experience.company === "Mighty Mugs" ?
-                            "Mighty Mugs personalized photo mug e-commerce platform with 3D preview technology" :
                             "Atomic Imaging Halloween-themed interactive website with multimedia content"}
                           className={`w-full h-auto rounded-lg border border-slate-600 object-contain experience-image ${experience.company === "Timesheets.com" ? "current-position" : ""}`}
                         />
@@ -343,6 +327,82 @@ export default function ExperienceSection() {
             ))}
           </div>
         </div>
+
+        {/* Notable Projects Section */}
+        <motion.div 
+          className="mt-20"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          <h3 className="text-3xl font-bold mb-8 text-center">
+            <span className="gradient-text">Notable</span> Projects
+          </h3>
+          
+          <motion.div 
+            className="bg-slate-800 rounded-lg p-6 shadow-xl hover:shadow-2xl transition-all portfolio-card"
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            viewport={{ once: true }}
+          >
+            <div className="flex flex-col lg:flex-row gap-6">
+              {/* Image on the left */}
+              <div className="lg:w-1/3 flex-shrink-0">
+                <img 
+                  src={mightyMugsScreenshot}
+                  alt="Mighty Mugs personalized photo mug e-commerce platform with 3D preview technology"
+                  className="w-full h-auto rounded-lg border border-slate-600 object-contain experience-image"
+                />
+              </div>
+              
+              {/* Content on the right */}
+              <div className="lg:w-2/3">
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                  <div>
+                    <h4 className="text-2xl font-bold text-[var(--portfolio-accent)]">Web Developer</h4>
+                    <p className="text-lg font-semibold text-[var(--portfolio-warning)]">Mighty Mugs</p>
+                  </div>
+                  <div className="text-[var(--portfolio-text-muted)] flex items-center">
+                    <Calendar className="h-4 w-4 mr-2" />
+                    <span>1999 – 2001</span>
+                  </div>
+                </div>
+                
+                <ul className="space-y-2 mb-4">
+                  <li className="text-[var(--portfolio-text-muted)] flex items-start">
+                    <span className="text-[var(--portfolio-warning)] mr-2">•</span>
+                    Developed personalized photo mug e-commerce platform with 3D preview technology
+                  </li>
+                  <li className="text-[var(--portfolio-text-muted)] flex items-start">
+                    <span className="text-[var(--portfolio-warning)] mr-2">•</span>
+                    Built custom mug design interface allowing users to upload and position photos
+                  </li>
+                  <li className="text-[var(--portfolio-text-muted)] flex items-start">
+                    <span className="text-[var(--portfolio-warning)] mr-2">•</span>
+                    Implemented 3D animated preview system showing exact mug appearance before purchase
+                  </li>
+                  <li className="text-[var(--portfolio-text-muted)] flex items-start">
+                    <span className="text-[var(--portfolio-warning)] mr-2">•</span>
+                    Created complete e-commerce workflow from design to order processing and fulfillment
+                  </li>
+                </ul>
+                
+                <div className="flex flex-wrap gap-2">
+                  {["HTML", "CSS", "JavaScript", "E-commerce", "3D Graphics"].map((tech, techIndex) => (
+                    <span 
+                      key={techIndex}
+                      className="px-3 py-1 bg-[var(--portfolio-warning)]/20 text-[var(--portfolio-warning)] rounded-full text-sm border border-[var(--portfolio-warning)]/30"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        </motion.div>
       </div>
     </section>
   );
