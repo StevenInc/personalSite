@@ -12,8 +12,8 @@ export default function AboutSection() {
             viewport={{ once: true }}
           >
             <img 
-              src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=600" 
-              alt="Modern tech office environment with collaboration spaces" 
+              src="@assets/Screenshot 2025-08-03 at 6.29.01 PM_1754270971704.png" 
+              alt="Steven Benjamin - Senior Full Stack Developer" 
               className="w-full aspect-square object-cover rounded-2xl shadow-xl" 
             />
           </motion.div>
