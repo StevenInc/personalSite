@@ -54,7 +54,7 @@ export default function ExperienceSection() {
         "Developed Black-Scholes based reissue valuation engine for structured products",
         "Collaborated with financial analysts to convert pricing models into performant web workflows"
       ],
-      technologies: ["ColdFusion", "Financial Modeling", "Black-Scholes"],
+      technologies: ["ColdFusion", "Fusebox", "Financial Modeling", "Black-Scholes"],
       accentColor: "var(--portfolio-purple)"
     },
     {
