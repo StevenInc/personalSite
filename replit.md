@@ -2,6 +2,12 @@
 
 This is a modern full-stack portfolio website built with React and Express showcasing Steven Benjamin, a Senior Full Stack Developer with 20+ years of experience. The application features a comprehensive portfolio with sections for about, skills, experience, projects, and contact functionality. It serves as both a professional showcase and a functional web application demonstrating modern development practices.
 
+## Recent Changes (August 2025)
+- **Email Integration**: Successfully implemented Resend email service for contact form functionality
+- **Domain Setup**: Custom domain stevenbenjamin.com configured and working
+- **Favicon Resolution**: Fixed favicon display issues by rebuilding production assets and configuring Express static middleware
+- **Production Build**: All production assets properly serve custom favicon.ico instead of SVG references
+
 # User Preferences
 
 Preferred communication style: Simple, everyday language.
