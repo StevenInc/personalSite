@@ -3,6 +3,7 @@ import { Calendar } from "lucide-react";
 import timesheetsScreenshot from "@assets/timesheets-screenshot.png";
 import jungleeScreenshot from "@assets/junglee-screenshot.png";
 import gapScreenshot from "@assets/gap-screenshot.png";
+import incapitalScreenshot from "@assets/incapital-screenshot.png";
 
 export default function ExperienceSection() {
   const experiences = [
@@ -136,19 +137,22 @@ export default function ExperienceSection() {
               >
                 <div className="bg-slate-800 rounded-lg p-6 shadow-xl hover:shadow-2xl transition-all portfolio-card">
                   {/* Special layout for companies with images */}
-                  {(experience.company === "Timesheets.com" || experience.company === "Amazon (Project Junglee)" || experience.company === "The Gap") ? (
+                  {(experience.company === "Timesheets.com" || experience.company === "Amazon (Project Junglee)" || experience.company === "The Gap" || experience.company === "Incapital Holdings (now Insperex)") ? (
                     <div className="flex flex-col lg:flex-row gap-6">
                       {/* Image on the left */}
                       <div className="lg:w-1/3 flex-shrink-0">
                         <img 
                           src={experience.company === "Timesheets.com" ? timesheetsScreenshot : 
                                experience.company === "Amazon (Project Junglee)" ? jungleeScreenshot : 
-                               gapScreenshot}
+                               experience.company === "The Gap" ? gapScreenshot :
+                               incapitalScreenshot}
                           alt={experience.company === "Timesheets.com" ? 
                             "Timesheets.com scheduling interface showing calendar view" : 
                             experience.company === "Amazon (Project Junglee)" ?
                             "Junglee.com e-commerce platform interface" :
-                            "Gap Inc. website showing diverse fashion models"}
+                            experience.company === "The Gap" ?
+                            "Gap Inc. website showing diverse fashion models" :
+                            "Incapital LadderBuilder financial tool interface for bond portfolio creation"}
                           className="w-full h-auto rounded-lg border border-slate-600 object-contain"
                         />
                       </div>
