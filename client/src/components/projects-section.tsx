@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ExternalLink, Play } from "lucide-react";
 import mightyMugsScreenshot from "@assets/mighty-mugs-screenshot.png";
+import liveStorefrontsScreenshot from "@assets/live-storefronts-screenshot.png";
 
 export default function ProjectsSection() {
   const projects = [
@@ -40,8 +41,8 @@ export default function ProjectsSection() {
     {
       title: "LiveStorefronts.com",
       description: "Real-time inventory posting platform enabling phone-based uploads with Google Maps integration for location-based business discovery.",
-      image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&ixid=MnwxMijA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=300",
-      alt: "Mobile app interface showing inventory management features",
+      image: liveStorefrontsScreenshot,
+      alt: "LiveStorefronts platform showing Snap, Speak & Send mobile workflow and dynamic storefronts",
       year: "2013",
       type: "Archive",
       features: [
