@@ -161,7 +161,7 @@ export default function ExperienceSection() {
                             experience.company === "Apartments.com" ?
                             "Apartments.com rental search interface with interactive map feature" :
                             "American Bar Association website showing legal professional advocacy"}
-                          className="w-full h-auto rounded-lg border border-slate-600 object-contain experience-image"
+                          className={`w-full h-auto rounded-lg border border-slate-600 object-contain experience-image ${experience.company === "Timesheets.com" ? "current-position" : ""}`}
                         />
                       </div>
                       

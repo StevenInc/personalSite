@@ -103,6 +103,10 @@
     transition: opacity 0.3s ease;
   }
   
+  .experience-image.current-position {
+    opacity: 1.0;
+  }
+  
   .portfolio-card:hover .experience-image {
     opacity: 1.0;
   }
