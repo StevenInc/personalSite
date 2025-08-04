@@ -178,17 +178,19 @@ export default function ProjectsSection() {
                   <div className="flex-grow"></div>
                   
                   {/* Demo Button at bottom */}
-                  <div className="mt-auto">
-                    <a 
-                      href={project.link} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 px-4 py-2 bg-[var(--portfolio-purple)] text-white rounded-lg hover:bg-[var(--portfolio-purple)]/80 transition-colors font-medium"
-                    >
-                      <Play className="h-4 w-4" />
-                      View Demo
-                    </a>
-                  </div>
+                  {project.link && (
+                    <div className="mt-auto">
+                      <a 
+                        href={project.link} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-4 py-2 bg-[var(--portfolio-purple)] text-white rounded-lg hover:bg-[var(--portfolio-purple)]/80 transition-colors font-medium"
+                      >
+                        <Play className="h-4 w-4" />
+                        View Demo
+                      </a>
+                    </div>
+                  )}
                 </div>
               ) : (
                 /* Standard layout for other projects */
@@ -251,7 +253,7 @@ export default function ProjectsSection() {
                   
                   {/* Gallery Buttons for MightyMugs and LiveStorefronts */}
                   {(project.title === "MightMugs.com" || project.title === "LiveStorefronts.com") && project.link && (
-                    <div className="mt-4 pt-4 border-t border-slate-700">
+                    <div className="mt-4">
                       <a 
                         href={project.link} 
                         target="_blank" 
