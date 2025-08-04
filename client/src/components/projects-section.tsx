@@ -167,8 +167,8 @@ export default function ProjectsSection() {
                 ))}
               </div>
               
-              {/* Live Demo Button for MightyMugs */}
-              {project.title === "MightMugs.com" && project.link && (
+              {/* Gallery Button for MightyMugs and LiveStorefronts */}
+              {(project.title === "MightMugs.com" || project.title === "LiveStorefronts.com") && project.link && (
                 <div className="mt-4 pt-4 border-t border-slate-700">
                   <a 
                     href={project.link} 
