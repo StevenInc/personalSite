@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Calendar } from "lucide-react";
 import timesheetsScreenshot from "@assets/timesheets-screenshot.png";
+import jungleeScreenshot from "@assets/junglee-screenshot.png";
 
 export default function ExperienceSection() {
   const experiences = [
@@ -133,14 +134,16 @@ export default function ExperienceSection() {
                 viewport={{ once: true }}
               >
                 <div className="bg-slate-800 rounded-lg p-6 shadow-xl hover:shadow-2xl transition-all portfolio-card">
-                  {/* Special layout for Timesheets.com with image */}
-                  {experience.company === "Timesheets.com" ? (
+                  {/* Special layout for companies with images */}
+                  {(experience.company === "Timesheets.com" || experience.company === "Amazon (Project Junglee)") ? (
                     <div className="flex flex-col lg:flex-row gap-6">
                       {/* Image on the left */}
                       <div className="lg:w-1/3 flex-shrink-0">
                         <img 
-                          src={timesheetsScreenshot}
-                          alt="Timesheets.com scheduling interface showing calendar view"
+                          src={experience.company === "Timesheets.com" ? timesheetsScreenshot : jungleeScreenshot}
+                          alt={experience.company === "Timesheets.com" ? 
+                            "Timesheets.com scheduling interface showing calendar view" : 
+                            "Junglee.com e-commerce platform interface"}
                           className="w-full h-auto rounded-lg border border-slate-600 object-contain"
                         />
                       </div>
