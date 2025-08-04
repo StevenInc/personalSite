@@ -93,6 +93,19 @@ export default function ExperienceSection() {
       accentColor: "var(--portfolio-warning)"
     },
     {
+      title: "Senior Full Stack Developer",
+      company: "American Express Publishing (Food & Wine Magazine)",
+      period: "2007 – 2009",
+      description: [
+        "Led development of multiple web-based ecommerce platform for sites targeted to international countries",
+        "Architected and implemented a custom multi-level chart to assist new recruits",
+        "Developed an in-house accounting tools",
+        "Utilized ColdFusion and the Fusebox framework for modularity, reusability, and long-term code maintainability"
+      ],
+      technologies: ["ColdFusion", "Fusebox", "JavaScript", "HTML", "CSS", "SQL Server"],
+      accentColor: "var(--portfolio-success)"
+    },
+    {
       title: "Full Stack Developer",
       company: "Incapital Holdings (now Insperex)",
       period: "2003 – 2007",
