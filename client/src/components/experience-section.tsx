@@ -100,6 +100,7 @@ export default function ExperienceSection() {
         "Led development of multiple web-based ecommerce platform for sites targeted to international countries",
         "Architected and implemented a custom multi-level chart to assist new recruits",
         "Developed an in-house accounting tools",
+        "Worked with the web dev team on their new site design",
         "Utilized ColdFusion and the Fusebox framework for modularity, reusability, and long-term code maintainability"
       ],
       technologies: ["ColdFusion", "Fusebox", "JavaScript", "HTML", "CSS", "SQL Server"],
