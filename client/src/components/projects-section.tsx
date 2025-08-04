@@ -28,9 +28,10 @@ export default function ProjectsSection() {
       year: "2007",
       type: "Live",
       features: [
-        "Built e-commerce site with custom design tools",
-        "Managed printing, packaging, and fulfillment workflows",
-        "Integrated payment processing and inventory management"
+        "Developed personalized photo mug e-commerce platform with 3D preview technology",
+        "Built custom mug design interface allowing users to upload and position photos",
+        "Implemented 3D animated preview system showing exact mug appearance before purchase",
+        "Created complete e-commerce workflow from design to order processing and fulfillment"
       ],
       technologies: ["E-commerce", "Manufacturing", "Full-stack"],
       link: "https://photos.app.goo.gl/kiMQ2qeT8vbGrnX46",
