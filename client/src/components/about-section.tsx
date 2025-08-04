@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import stevenPhoto from "@assets/Screenshot 2025-08-03 at 6.29.01 PM_1754270971704.png";
 
 export default function AboutSection() {
   return (
@@ -12,7 +13,7 @@ export default function AboutSection() {
             viewport={{ once: true }}
           >
             <img 
-              src="@assets/Screenshot 2025-08-03 at 6.29.01 PM_1754270971704.png" 
+              src={stevenPhoto} 
               alt="Steven Benjamin - Senior Full Stack Developer" 
               className="w-full aspect-square object-cover rounded-2xl shadow-xl" 
             />
