@@ -11,6 +11,7 @@ import judicialCouncilScreenshot from "@assets/judicial-council-screenshot.png";
 import vemmaScreenshot from "@assets/vemma-screenshot.png";
 import foodWineScreenshot from "@assets/food-wine-screenshot.png";
 import mightyMugsScreenshot from "@assets/mighty-mugs-screenshot.png";
+import liveStorefrontsScreenshot from "@assets/live-storefronts-screenshot.png";
 
 export default function ExperienceSection() {
   const experiences = [
@@ -149,6 +150,20 @@ export default function ExperienceSection() {
       accentColor: "var(--portfolio-purple)"
     },
     {
+      title: "Mobile App Developer / Web Developer",
+      company: "Live Storefronts",
+      period: "2012 – 2014",
+      description: [
+        "Developed mobile merchant app enabling instant inventory posting with camera integration",
+        "Built 'Snap, Speak & Send' functionality for rapid product listing and management",
+        "Created responsive web storefronts that sync with mobile app inventory in real-time",
+        "Implemented cross-platform solution supporting both Google Play and App Store deployment",
+        "Designed intuitive workflow allowing merchants to publish inventory in under a minute"
+      ],
+      technologies: ["Mobile Development", "JavaScript", "HTML5", "CSS3", "Camera API", "Real-time Sync"],
+      accentColor: "var(--portfolio-success)"
+    },
+    {
       title: "Web Developer",
       company: "Mighty Mugs",
       period: "1999 – 2001",
@@ -194,7 +209,7 @@ export default function ExperienceSection() {
               >
                 <div className="bg-slate-800 rounded-lg p-6 shadow-xl hover:shadow-2xl transition-all portfolio-card">
                   {/* Special layout for companies with images */}
-                  {(experience.company === "Timesheets.com" || experience.company === "Amazon (Project Junglee)" || experience.company === "The Gap" || experience.company === "Incapital Holdings (now Insperex)" || experience.company === "Apartments.com" || experience.company === "American Bar Association" || experience.company === "Atomic Imaging" || experience.company === "Judicial Council of California" || experience.company === "Vemma.com" || experience.company === "American Express Publishing (Food & Wine Magazine)" || experience.company === "Mighty Mugs") ? (
+                  {(experience.company === "Timesheets.com" || experience.company === "Amazon (Project Junglee)" || experience.company === "The Gap" || experience.company === "Incapital Holdings (now Insperex)" || experience.company === "Apartments.com" || experience.company === "American Bar Association" || experience.company === "Atomic Imaging" || experience.company === "Judicial Council of California" || experience.company === "Vemma.com" || experience.company === "American Express Publishing (Food & Wine Magazine)" || experience.company === "Live Storefronts" || experience.company === "Mighty Mugs") ? (
                     <div className="flex flex-col lg:flex-row gap-6">
                       {/* Image on the left */}
                       <div className="lg:w-1/3 flex-shrink-0">
@@ -208,6 +223,7 @@ export default function ExperienceSection() {
                                experience.company === "Judicial Council of California" ? judicialCouncilScreenshot :
                                experience.company === "Vemma.com" ? vemmaScreenshot :
                                experience.company === "American Express Publishing (Food & Wine Magazine)" ? foodWineScreenshot :
+                               experience.company === "Live Storefronts" ? liveStorefrontsScreenshot :
                                experience.company === "Mighty Mugs" ? mightyMugsScreenshot :
                                atomicImagingScreenshot}
                           alt={experience.company === "Timesheets.com" ? 
@@ -228,6 +244,8 @@ export default function ExperienceSection() {
                             "Vemma e-commerce platform featuring health products and international marketing" :
                             experience.company === "American Express Publishing (Food & Wine Magazine)" ?
                             "Food & Wine Magazine website showing holiday recipes, cooking guides, and wine pairings" :
+                            experience.company === "Live Storefronts" ?
+                            "Live Storefronts mobile merchant app with Snap, Speak & Send inventory management system" :
                             experience.company === "Mighty Mugs" ?
                             "Mighty Mugs personalized photo mug e-commerce platform with 3D preview technology" :
                             "Atomic Imaging Halloween-themed interactive website with multimedia content"}
