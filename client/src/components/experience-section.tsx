@@ -58,6 +58,33 @@ export default function ExperienceSection() {
       accentColor: "var(--portfolio-warning)"
     },
     {
+      title: "Frontend Developer",
+      company: "Apartments.com",
+      period: "2003 (6-month contract)",
+      description: [
+        "Developed the original interactive map feature allowing users to browse listings by region",
+        "Integrated Elasticsearch for fast geographic search and Redis for caching and performance",
+        "Built dynamic overlays, heatmaps, and spatial queries in collaboration with GIS analysts",
+        "Delivered mobile-responsive UI with cross-browser support for high user engagement"
+      ],
+      technologies: ["JavaScript", "HTML", "CSS", "Elasticsearch", "Redis", "Visual Studio"],
+      accentColor: "var(--portfolio-success)"
+    },
+    {
+      title: "Full Stack Developer",
+      company: "American Bar Association",
+      period: "2003 (6-month contract)",
+      description: [
+        "Developed and maintained internal web applications for departments including membership, continuing legal education, and legal ethics",
+        "Created secure ColdFusion-powered portals for attorney registration, CLE tracking, and document submission",
+        "Designed intuitive UI flows to simplify staff workflows while ensuring compliance with legal data standards",
+        "Collaborated across teams to build database-driven dashboards and reporting tools",
+        "Maintained and extended legacy CFML code while improving system performance and usability"
+      ],
+      technologies: ["ColdFusion", "HTML", "CSS", "JavaScript", "SQL Server", "IIS", "Legacy CFML"],
+      accentColor: "var(--portfolio-warning)"
+    },
+    {
       title: "Senior Full Stack Developer",
       company: "Incapital Holdings (now Insperex)",
       period: "2003 – 2007",
