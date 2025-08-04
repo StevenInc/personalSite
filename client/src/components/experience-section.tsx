@@ -11,6 +11,20 @@ import atomicImagingScreenshot from "@assets/atomic-imaging-screenshot.png";
 export default function ExperienceSection() {
   const experiences = [
     {
+      title: "Senior Front-End Developer",
+      company: "The Gap",
+      period: "Mar 2017 – Apr 2019",
+      description: [
+        "Angular (v2+) development across multiple Gap Inc. brands",
+        "Refactored legacy JavaScript into modular components with TypeScript & RxJS",
+        "Spearheaded mobile-first and WCAG-compliant improvements across major UIs",
+        "Led mentorship programs for junior developers and established collaborative code review processes",
+        "Built strong cross-functional relationships between design, product, and engineering teams"
+      ],
+      technologies: ["Angular", "TypeScript", "RxJS", "SCSS"],
+      accentColor: "var(--portfolio-success)"
+    },
+    {
       title: "Senior Full Stack Developer",
       company: "Timesheets.com",
       period: "Jan 2017 – Present",
@@ -25,17 +39,16 @@ export default function ExperienceSection() {
       accentColor: "var(--portfolio-accent)"
     },
     {
-      title: "Senior Front-End Developer",
-      company: "The Gap",
-      period: "Mar 2017 – Apr 2019",
+      title: "Frontend Developer",
+      company: "Apartments.com",
+      period: "2016 (6-month contract)",
       description: [
-        "Angular (v2+) development across multiple Gap Inc. brands",
-        "Refactored legacy JavaScript into modular components with TypeScript & RxJS",
-        "Spearheaded mobile-first and WCAG-compliant improvements across major UIs",
-        "Led mentorship programs for junior developers and established collaborative code review processes",
-        "Built strong cross-functional relationships between design, product, and engineering teams"
+        "Developed the original interactive map feature allowing users to browse listings by region",
+        "Integrated Elasticsearch for fast geographic search and Redis for caching and performance",
+        "Built dynamic overlays, heatmaps, and spatial queries in collaboration with GIS analysts",
+        "Delivered mobile-responsive UI with cross-browser support for high user engagement"
       ],
-      technologies: ["Angular", "TypeScript", "RxJS", "SCSS"],
+      technologies: ["JavaScript", "HTML", "CSS", "Elasticsearch", "Redis", "Visual Studio"],
       accentColor: "var(--portfolio-success)"
     },
     {
@@ -63,19 +76,6 @@ export default function ExperienceSection() {
       ],
       technologies: ["ColdFusion", "Fusebox", "Financial Modeling", "Black-Scholes"],
       accentColor: "var(--portfolio-purple)"
-    },
-    {
-      title: "Frontend Developer",
-      company: "Apartments.com",
-      period: "2016 (6-month contract)",
-      description: [
-        "Developed the original interactive map feature allowing users to browse listings by region",
-        "Integrated Elasticsearch for fast geographic search and Redis for caching and performance",
-        "Built dynamic overlays, heatmaps, and spatial queries in collaboration with GIS analysts",
-        "Delivered mobile-responsive UI with cross-browser support for high user engagement"
-      ],
-      technologies: ["JavaScript", "HTML", "CSS", "Elasticsearch", "Redis", "Visual Studio"],
-      accentColor: "var(--portfolio-success)"
     },
     {
       title: "Full Stack Developer",
