@@ -23,7 +23,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
       const emailSent = await sendEmail({
         from: 'onboarding@resend.dev',
-        to: 'steven@stevenbenjamin.com',
+        to: process.env.CONTACT_EMAIL || 'me@stevenbenjamin.com',
         subject: `Portfolio Contact: ${submission.subject}`,
         html: emailHTML,
         replyTo: submission.email
