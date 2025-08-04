@@ -74,6 +74,24 @@ export default function ProjectsSection() {
       technologies: ["Creative Tech", "Motion Tracking", "Interactive"],
       link: "https://www.youtube.com/watch?v=RSA9I3E_rE4",
       isVideo: true
+    },
+    {
+      title: "Mapified.com",
+      description: "Map-based classified listing site built before Craigslist added maps, featuring innovative location-based browsing and filtering.",
+      image: "/api/placeholder/400/300",
+      alt: "Mapified.com map-based classified listings platform",
+      year: "2014",
+      type: "Demo",
+      features: [
+        "Founded and developed comprehensive map-based classified platform",
+        "Implemented custom pin filtering system for enhanced user navigation",
+        "Created location tagging functionality predating major competitors",
+        "Built intuitive geographic search interface for listing discovery",
+        "Designed responsive mapping interface optimized for classified browsing"
+      ],
+      technologies: ["Maps API", "Geolocation", "Web Platform"],
+      link: "https://www.youtube.com/watch?v=rtCQFLAexdo",
+      isVideo: true
     }
   ];
 
@@ -115,8 +133,8 @@ export default function ProjectsSection() {
               transition={{ duration: 0.8, delay: index * 0.2 }}
               viewport={{ once: true }}
             >
-              {/* Special layout for Air Graffiti */}
-              {project.title === "Air Graffiti" ? (
+              {/* Special layout for Air Graffiti and Mapified */}
+              {(project.title === "Air Graffiti" || project.title === "Mapified.com") ? (
                 <div className="flex flex-col h-full">
                   <div className="flex items-start justify-between mb-4">
                     <img 
