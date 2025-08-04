@@ -115,90 +115,155 @@ export default function ProjectsSection() {
               transition={{ duration: 0.8, delay: index * 0.2 }}
               viewport={{ once: true }}
             >
-              <div className="flex items-start justify-between mb-4">
-                <img 
-                  src={project.image}
-                  alt={project.alt}
-                  className="w-24 h-24 object-cover rounded-lg" 
-                />
-                <div className="flex items-center space-x-2">
-                  <span className="px-2 py-1 rounded text-xs" style={{ 
-                    backgroundColor: `var(--portfolio-success)20`, 
-                    color: "var(--portfolio-success)" 
-                  }}>
-                    {project.year}
-                  </span>
-                  {project.link && (
+              {/* Special layout for Air Graffiti */}
+              {project.title === "Air Graffiti" ? (
+                <div className="flex flex-col h-full">
+                  <div className="flex items-start justify-between mb-4">
+                    <img 
+                      src={project.image}
+                      alt={project.alt}
+                      className="w-24 h-24 object-cover rounded-lg" 
+                    />
+                    <div className="flex items-center space-x-2">
+                      <span className="px-2 py-1 rounded text-xs" style={{ 
+                        backgroundColor: `var(--portfolio-success)20`, 
+                        color: "var(--portfolio-success)" 
+                      }}>
+                        {project.year}
+                      </span>
+                      {project.link && (
+                        <a 
+                          href={project.link} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="text-[var(--portfolio-accent)] hover:text-blue-300 transition-colors"
+                        >
+                          {project.isVideo ? <Play className="h-4 w-4" /> : <ExternalLink className="h-4 w-4" />}
+                        </a>
+                      )}
+                      <span className="px-2 py-1 rounded text-xs" style={{ 
+                        backgroundColor: `${getTypeColor(project.type)}20`, 
+                        color: getTypeColor(project.type) 
+                      }}>
+                        {project.type}
+                      </span>
+                    </div>
+                  </div>
+                  
+                  <h3 className="text-xl font-bold mb-3">{project.title}</h3>
+                  <p className="text-slate-300 mb-4">{project.description}</p>
+                  
+                  <div className="space-y-2 mb-4">
+                    {project.features.map((feature, featureIndex) => (
+                      <p key={featureIndex} className="text-sm text-slate-400">• {feature}</p>
+                    ))}
+                  </div>
+                  
+                  <div className="flex flex-wrap gap-2 mb-6">
+                    {project.technologies.map((tech) => (
+                      <span 
+                        key={tech}
+                        className="px-2 py-1 rounded text-xs"
+                        style={{ 
+                          backgroundColor: `var(--portfolio-accent)20`, 
+                          color: "var(--portfolio-accent)" 
+                        }}
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                  
+                  {/* Spacer to push button to bottom */}
+                  <div className="flex-grow"></div>
+                  
+                  {/* Demo Button at bottom */}
+                  <div className="mt-auto">
                     <a 
                       href={project.link} 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="text-[var(--portfolio-accent)] hover:text-blue-300 transition-colors"
+                      className="inline-flex items-center gap-2 px-4 py-2 bg-[var(--portfolio-purple)] text-white rounded-lg hover:bg-[var(--portfolio-purple)]/80 transition-colors font-medium"
                     >
-                      {project.isVideo ? <Play className="h-4 w-4" /> : <ExternalLink className="h-4 w-4" />}
+                      <Play className="h-4 w-4" />
+                      View Demo
                     </a>
+                  </div>
+                </div>
+              ) : (
+                /* Standard layout for other projects */
+                <>
+                  <div className="flex items-start justify-between mb-4">
+                    <img 
+                      src={project.image}
+                      alt={project.alt}
+                      className="w-24 h-24 object-cover rounded-lg" 
+                    />
+                    <div className="flex items-center space-x-2">
+                      <span className="px-2 py-1 rounded text-xs" style={{ 
+                        backgroundColor: `var(--portfolio-success)20`, 
+                        color: "var(--portfolio-success)" 
+                      }}>
+                        {project.year}
+                      </span>
+                      {project.link && (
+                        <a 
+                          href={project.link} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="text-[var(--portfolio-accent)] hover:text-blue-300 transition-colors"
+                        >
+                          {project.isVideo ? <Play className="h-4 w-4" /> : <ExternalLink className="h-4 w-4" />}
+                        </a>
+                      )}
+                      <span className="px-2 py-1 rounded text-xs" style={{ 
+                        backgroundColor: `${getTypeColor(project.type)}20`, 
+                        color: getTypeColor(project.type) 
+                      }}>
+                        {project.type}
+                      </span>
+                    </div>
+                  </div>
+                  
+                  <h3 className="text-xl font-bold mb-3">{project.title}</h3>
+                  <p className="text-slate-300 mb-4">{project.description}</p>
+                  
+                  <div className="space-y-2 mb-4">
+                    {project.features.map((feature, featureIndex) => (
+                      <p key={featureIndex} className="text-sm text-slate-400">• {feature}</p>
+                    ))}
+                  </div>
+                  
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {project.technologies.map((tech) => (
+                      <span 
+                        key={tech}
+                        className="px-2 py-1 rounded text-xs"
+                        style={{ 
+                          backgroundColor: `var(--portfolio-accent)20`, 
+                          color: "var(--portfolio-accent)" 
+                        }}
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                  
+                  {/* Gallery Buttons for MightyMugs and LiveStorefronts */}
+                  {(project.title === "MightMugs.com" || project.title === "LiveStorefronts.com") && project.link && (
+                    <div className="mt-4 pt-4 border-t border-slate-700">
+                      <a 
+                        href={project.link} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-4 py-2 bg-[var(--portfolio-success)] text-white rounded-lg hover:bg-[var(--portfolio-success)]/80 transition-colors font-medium"
+                      >
+                        <ExternalLink className="h-4 w-4" />
+                        View Gallery
+                      </a>
+                    </div>
                   )}
-                  <span className="px-2 py-1 rounded text-xs" style={{ 
-                    backgroundColor: `${getTypeColor(project.type)}20`, 
-                    color: getTypeColor(project.type) 
-                  }}>
-                    {project.type}
-                  </span>
-                </div>
-              </div>
-              
-              <h3 className="text-xl font-bold mb-3">{project.title}</h3>
-              <p className="text-slate-300 mb-4">{project.description}</p>
-              
-              <div className="space-y-2 mb-4">
-                {project.features.map((feature, featureIndex) => (
-                  <p key={featureIndex} className="text-sm text-slate-400">• {feature}</p>
-                ))}
-              </div>
-              
-              <div className="flex flex-wrap gap-2 mb-4">
-                {project.technologies.map((tech) => (
-                  <span 
-                    key={tech}
-                    className="px-2 py-1 rounded text-xs"
-                    style={{ 
-                      backgroundColor: `var(--portfolio-accent)20`, 
-                      color: "var(--portfolio-accent)" 
-                    }}
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
-              
-              {/* Gallery Buttons for MightyMugs and LiveStorefronts */}
-              {(project.title === "MightMugs.com" || project.title === "LiveStorefronts.com") && project.link && (
-                <div className="mt-4 pt-4 border-t border-slate-700">
-                  <a 
-                    href={project.link} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-4 py-2 bg-[var(--portfolio-success)] text-white rounded-lg hover:bg-[var(--portfolio-success)]/80 transition-colors font-medium"
-                  >
-                    <ExternalLink className="h-4 w-4" />
-                    View Gallery
-                  </a>
-                </div>
-              )}
-              
-              {/* Demo Button for Air Graffiti only */}
-              {project.title === "Air Graffiti" && project.link && (
-                <div className="mt-4 pt-4 border-t border-slate-700">
-                  <a 
-                    href={project.link} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-4 py-2 bg-[var(--portfolio-purple)] text-white rounded-lg hover:bg-[var(--portfolio-purple)]/80 transition-colors font-medium"
-                  >
-                    <Play className="h-4 w-4" />
-                    View Demo
-                  </a>
-                </div>
+                </>
               )}
             </motion.div>
           ))}
