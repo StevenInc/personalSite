@@ -4,7 +4,7 @@ import timesheetsScreenshot from "@assets/timesheets-screenshot.png";
 import jungleeScreenshot from "@assets/junglee-screenshot.png";
 import gapScreenshot from "@assets/gap-screenshot.png";
 import incapitalScreenshot from "@assets/incapital-screenshot.png";
-import apartmentsScreenshot from "@assets/apartments-screenshot.png";
+import apartmentsScreenshot from "@assets/apartments-screenshot-new.png";
 import abaScreenshot from "@assets/aba-screenshot.png";
 import atomicImagingScreenshot from "@assets/atomic-imaging-screenshot.png";
 import judicialCouncilScreenshot from "@assets/judicial-council-screenshot.png";
