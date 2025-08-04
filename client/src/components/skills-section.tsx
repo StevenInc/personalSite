@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Database, Cloud, TestTube, Wrench } from "lucide-react";
+import programmingLanguagesChart from "@assets/programming-languages-chart.png";
 
 export default function SkillsSection() {
   const frontendSkills = [
@@ -44,8 +45,8 @@ export default function SkillsSection() {
         <div className="grid md:grid-cols-2 gap-12">
           <div>
             <img 
-              src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=600" 
-              alt="Abstract technology graphics with circuit patterns" 
+              src={programmingLanguagesChart}
+              alt="Most in-demand programming languages chart showing Python, Java, JavaScript and other popular languages" 
               className="w-full aspect-square object-cover rounded-2xl shadow-xl" 
             />
           </div>
