@@ -54,19 +54,6 @@ export default function ExperienceSection() {
       accentColor: "var(--portfolio-purple)"
     },
     {
-      title: "Latency Reduction Specialist / Frontend Developer",
-      company: "Amazon (Project Junglee)",
-      period: "Jan 2013 – Dec 2014",
-      description: [
-        "Developed cross-domain rating widgets and email templates using JSONP and iframe strategies",
-        "Worked on UI latency reduction—image sprite optimization, above-the-fold asset prioritization",
-        "Migrated code from CoffeeScript to modular JavaScript",
-        "Gained fluency in shell scripting for Linux/Windows and internal tools"
-      ],
-      technologies: ["JavaScript", "Performance", "Shell Scripting"],
-      accentColor: "var(--portfolio-warning)"
-    },
-    {
       title: "Frontend Developer",
       company: "Apartments.com",
       period: "2014 (6-month contract)",
@@ -78,6 +65,19 @@ export default function ExperienceSection() {
       ],
       technologies: ["JavaScript", "HTML", "CSS", "Elasticsearch", "Redis", "Visual Studio"],
       accentColor: "var(--portfolio-success)"
+    },
+    {
+      title: "Latency Reduction Specialist / Frontend Developer",
+      company: "Amazon (Project Junglee)",
+      period: "Jan 2013 – Dec 2014",
+      description: [
+        "Developed cross-domain rating widgets and email templates using JSONP and iframe strategies",
+        "Worked on UI latency reduction—image sprite optimization, above-the-fold asset prioritization",
+        "Migrated code from CoffeeScript to modular JavaScript",
+        "Gained fluency in shell scripting for Linux/Windows and internal tools"
+      ],
+      technologies: ["JavaScript", "Performance", "Shell Scripting"],
+      accentColor: "var(--portfolio-warning)"
     },
     {
       title: "Senior Full Stack Developer",
