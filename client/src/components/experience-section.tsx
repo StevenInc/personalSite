@@ -32,17 +32,17 @@ export default function ExperienceSection() {
       accentColor: "var(--portfolio-success)"
     },
     {
-      title: "Developer", // Please provide your exact title
+      title: "Web Developer / Kiosk Developer",
       company: "Atomic Imaging",
-      period: "YYYY – YYYY", // Please provide the dates
+      period: "2001 – 2003",
       description: [
-        // Please provide your key responsibilities and achievements at Atomic Imaging
-        "Developed and maintained imaging software applications",
-        "Collaborated with cross-functional teams on technical solutions",
-        "Built strong client relationships and delivered quality results"
+        "Developed interactive kiosks using Macromedia Director for trade shows and corporate lobbies",
+        "Built ColdFusion and Flash-powered websites for high-profile clients",
+        "Delivered live streaming and video media integrations for multimedia campaigns",
+        "Created engaging multimedia experiences that enhanced client brand presence"
       ],
-      technologies: ["Technology1", "Technology2"], // Please provide the technologies you used
-      accentColor: "var(--portfolio-accent)"
+      technologies: ["ColdFusion", "Director", "HTML", "CSS", "JavaScript", "SQL Server", "IIS"],
+      accentColor: "var(--portfolio-purple)"
     },
     {
       title: "Latency Reduction Specialist / Frontend Developer",
