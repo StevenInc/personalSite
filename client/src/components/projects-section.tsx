@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { ExternalLink, Play } from "lucide-react";
 import mightyMugsScreenshot from "@assets/mighty-mugs-screenshot.png";
 import liveStorefrontsScreenshot from "@assets/live-storefronts-screenshot.png";
+import airGraffitiScreenshot from "@assets/air-graffiti-screenshot-new.png";
 
 export default function ProjectsSection() {
   const projects = [
@@ -59,8 +60,8 @@ export default function ProjectsSection() {
     {
       title: "Air Graffiti",
       description: "Interactive digital graffiti wall using IR/motion-tracked spray cans with projection mapping technology for immersive art installations.",
-      image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=MnwxMijA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=300",
-      alt: "Interactive digital art installation with projection mapping",
+      image: airGraffitiScreenshot,
+      alt: "Air Graffiti mobile app showing Painter and Viewer mode selection interface",
       year: "2013",
       type: "Demo",
       features: [
