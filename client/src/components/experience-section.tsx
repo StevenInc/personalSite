@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Calendar } from "lucide-react";
-import timesheetsScreenshot from "@assets/Screenshot 2025-08-03 at 8.53.28 PM_1754279660221.png";
+import timesheetsScreenshot from "@assets/timesheets-screenshot.png";
 
 export default function ExperienceSection() {
   const experiences = [
