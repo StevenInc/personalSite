@@ -6,6 +6,7 @@ import gapScreenshot from "@assets/gap-screenshot.png";
 import incapitalScreenshot from "@assets/incapital-screenshot.png";
 import apartmentsScreenshot from "@assets/apartments-screenshot.png";
 import abaScreenshot from "@assets/aba-screenshot.png";
+import atomicImagingScreenshot from "@assets/atomic-imaging-screenshot.png";
 
 export default function ExperienceSection() {
   const experiences = [
@@ -139,7 +140,7 @@ export default function ExperienceSection() {
               >
                 <div className="bg-slate-800 rounded-lg p-6 shadow-xl hover:shadow-2xl transition-all portfolio-card">
                   {/* Special layout for companies with images */}
-                  {(experience.company === "Timesheets.com" || experience.company === "Amazon (Project Junglee)" || experience.company === "The Gap" || experience.company === "Incapital Holdings (now Insperex)" || experience.company === "Apartments.com" || experience.company === "American Bar Association") ? (
+                  {(experience.company === "Timesheets.com" || experience.company === "Amazon (Project Junglee)" || experience.company === "The Gap" || experience.company === "Incapital Holdings (now Insperex)" || experience.company === "Apartments.com" || experience.company === "American Bar Association" || experience.company === "Atomic Imaging") ? (
                     <div className="flex flex-col lg:flex-row gap-6">
                       {/* Image on the left */}
                       <div className="lg:w-1/3 flex-shrink-0">
@@ -149,7 +150,8 @@ export default function ExperienceSection() {
                                experience.company === "The Gap" ? gapScreenshot :
                                experience.company === "Incapital Holdings (now Insperex)" ? incapitalScreenshot :
                                experience.company === "Apartments.com" ? apartmentsScreenshot :
-                               abaScreenshot}
+                               experience.company === "American Bar Association" ? abaScreenshot :
+                               atomicImagingScreenshot}
                           alt={experience.company === "Timesheets.com" ? 
                             "Timesheets.com scheduling interface showing calendar view" : 
                             experience.company === "Amazon (Project Junglee)" ?
@@ -160,7 +162,9 @@ export default function ExperienceSection() {
                             "Incapital LadderBuilder financial tool interface for bond portfolio creation" :
                             experience.company === "Apartments.com" ?
                             "Apartments.com rental search interface with interactive map feature" :
-                            "American Bar Association website showing legal professional advocacy"}
+                            experience.company === "American Bar Association" ?
+                            "American Bar Association website showing legal professional advocacy" :
+                            "Atomic Imaging Halloween-themed interactive website with multimedia content"}
                           className={`w-full h-auto rounded-lg border border-slate-600 object-contain experience-image ${experience.company === "Timesheets.com" ? "current-position" : ""}`}
                         />
                       </div>
