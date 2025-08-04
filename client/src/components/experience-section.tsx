@@ -12,6 +12,7 @@ import vemmaScreenshot from "@assets/vemma-screenshot.png";
 import foodWineScreenshot from "@assets/food-wine-screenshot.png";
 import mightyMugsScreenshot from "@assets/mighty-mugs-screenshot.png";
 import liveStorefrontsScreenshot from "@assets/live-storefronts-screenshot.png";
+import airGraffitiScreenshot from "@assets/air-graffiti-screenshot.png";
 
 export default function ExperienceSection() {
   const experiences = [
@@ -164,6 +165,20 @@ export default function ExperienceSection() {
       accentColor: "var(--portfolio-success)"
     },
     {
+      title: "Mobile App Developer",
+      company: "Air Graffiti",
+      period: "2009 – 2010",
+      description: [
+        "Developed innovative mobile graffiti application with dual-mode functionality",
+        "Built 'Painter' mode enabling users to create digital graffiti art using touch interface",
+        "Implemented 'Viewer' mode for discovering and exploring graffiti artwork by location",
+        "Created location-based art sharing platform connecting street artists digitally",
+        "Designed intuitive mobile UI optimized for creative expression and social discovery"
+      ],
+      technologies: ["Mobile Development", "iOS", "Location Services", "Touch Interface", "Social Platform"],
+      accentColor: "var(--portfolio-purple)"
+    },
+    {
       title: "Web Developer",
       company: "Mighty Mugs",
       period: "1999 – 2001",
@@ -209,7 +224,7 @@ export default function ExperienceSection() {
               >
                 <div className="bg-slate-800 rounded-lg p-6 shadow-xl hover:shadow-2xl transition-all portfolio-card">
                   {/* Special layout for companies with images */}
-                  {(experience.company === "Timesheets.com" || experience.company === "Amazon (Project Junglee)" || experience.company === "The Gap" || experience.company === "Incapital Holdings (now Insperex)" || experience.company === "Apartments.com" || experience.company === "American Bar Association" || experience.company === "Atomic Imaging" || experience.company === "Judicial Council of California" || experience.company === "Vemma.com" || experience.company === "American Express Publishing (Food & Wine Magazine)" || experience.company === "Live Storefronts" || experience.company === "Mighty Mugs") ? (
+                  {(experience.company === "Timesheets.com" || experience.company === "Amazon (Project Junglee)" || experience.company === "The Gap" || experience.company === "Incapital Holdings (now Insperex)" || experience.company === "Apartments.com" || experience.company === "American Bar Association" || experience.company === "Atomic Imaging" || experience.company === "Judicial Council of California" || experience.company === "Vemma.com" || experience.company === "American Express Publishing (Food & Wine Magazine)" || experience.company === "Live Storefronts" || experience.company === "Air Graffiti" || experience.company === "Mighty Mugs") ? (
                     <div className="flex flex-col lg:flex-row gap-6">
                       {/* Image on the left */}
                       <div className="lg:w-1/3 flex-shrink-0">
@@ -224,6 +239,7 @@ export default function ExperienceSection() {
                                experience.company === "Vemma.com" ? vemmaScreenshot :
                                experience.company === "American Express Publishing (Food & Wine Magazine)" ? foodWineScreenshot :
                                experience.company === "Live Storefronts" ? liveStorefrontsScreenshot :
+                               experience.company === "Air Graffiti" ? airGraffitiScreenshot :
                                experience.company === "Mighty Mugs" ? mightyMugsScreenshot :
                                atomicImagingScreenshot}
                           alt={experience.company === "Timesheets.com" ? 
@@ -246,6 +262,8 @@ export default function ExperienceSection() {
                             "Food & Wine Magazine website showing holiday recipes, cooking guides, and wine pairings" :
                             experience.company === "Live Storefronts" ?
                             "Live Storefronts mobile merchant app with Snap, Speak & Send inventory management system" :
+                            experience.company === "Air Graffiti" ?
+                            "Air Graffiti mobile app showing Painter and Viewer modes for digital street art creation" :
                             experience.company === "Mighty Mugs" ?
                             "Mighty Mugs personalized photo mug e-commerce platform with 3D preview technology" :
                             "Atomic Imaging Halloween-themed interactive website with multimedia content"}
