@@ -64,7 +64,7 @@ export default function ContactSection() {
       icon: Phone,
       title: "Phone",
       value: "(415) 324-9035",
-      subtitle: "Text before calling",
+      subtitle: "(Text before calling)",
       href: "tel:4153249035",
       color: "var(--portfolio-success)"
     },
@@ -153,7 +153,7 @@ export default function ContactSection() {
                         <div className="text-slate-300">{info.value}</div>
                       )}
                       {info.subtitle && (
-                        <div className="text-sm text-[var(--portfolio-text-muted)]">{info.subtitle}</div>
+                        <div className="text-sm text-[var(--portfolio-text-muted)] italic">{info.subtitle}</div>
                       )}
                     </div>
                   </motion.div>
