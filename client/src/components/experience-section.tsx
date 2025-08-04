@@ -8,6 +8,7 @@ import apartmentsScreenshot from "@assets/apartments-screenshot.png";
 import abaScreenshot from "@assets/aba-screenshot.png";
 import atomicImagingScreenshot from "@assets/atomic-imaging-screenshot.png";
 import judicialCouncilScreenshot from "@assets/judicial-council-screenshot.png";
+import vemmaScreenshot from "@assets/vemma-screenshot.png";
 
 export default function ExperienceSection() {
   const experiences = [
@@ -167,7 +168,7 @@ export default function ExperienceSection() {
               >
                 <div className="bg-slate-800 rounded-lg p-6 shadow-xl hover:shadow-2xl transition-all portfolio-card">
                   {/* Special layout for companies with images */}
-                  {(experience.company === "Timesheets.com" || experience.company === "Amazon (Project Junglee)" || experience.company === "The Gap" || experience.company === "Incapital Holdings (now Insperex)" || experience.company === "Apartments.com" || experience.company === "American Bar Association" || experience.company === "Atomic Imaging" || experience.company === "Judicial Council of California") ? (
+                  {(experience.company === "Timesheets.com" || experience.company === "Amazon (Project Junglee)" || experience.company === "The Gap" || experience.company === "Incapital Holdings (now Insperex)" || experience.company === "Apartments.com" || experience.company === "American Bar Association" || experience.company === "Atomic Imaging" || experience.company === "Judicial Council of California" || experience.company === "Vemma.com") ? (
                     <div className="flex flex-col lg:flex-row gap-6">
                       {/* Image on the left */}
                       <div className="lg:w-1/3 flex-shrink-0">
@@ -179,6 +180,7 @@ export default function ExperienceSection() {
                                experience.company === "Apartments.com" ? apartmentsScreenshot :
                                experience.company === "American Bar Association" ? abaScreenshot :
                                experience.company === "Judicial Council of California" ? judicialCouncilScreenshot :
+                               experience.company === "Vemma.com" ? vemmaScreenshot :
                                atomicImagingScreenshot}
                           alt={experience.company === "Timesheets.com" ? 
                             "Timesheets.com scheduling interface showing calendar view" : 
@@ -194,6 +196,8 @@ export default function ExperienceSection() {
                             "American Bar Association website showing legal professional advocacy" :
                             experience.company === "Judicial Council of California" ?
                             "California Judicial Council website showing policy and administration interface" :
+                            experience.company === "Vemma.com" ?
+                            "Vemma e-commerce platform featuring health products and international marketing" :
                             "Atomic Imaging Halloween-themed interactive website with multimedia content"}
                           className={`w-full h-auto rounded-lg border border-slate-600 object-contain experience-image ${experience.company === "Timesheets.com" ? "current-position" : ""}`}
                         />
