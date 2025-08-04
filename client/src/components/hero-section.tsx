@@ -1,8 +1,12 @@
 import { motion } from "framer-motion";
 import { Mail, Globe, Phone } from "lucide-react";
+import { useState } from "react";
 import playskoolComputer from "@assets/playskool_computer_front_shadow_1754275521975.jpg";
+import playskoolComputerBack from "@assets/playskool_computer_back2_shadow_1754275635519.jpg";
 
 export default function HeroSection() {
+  const [isHovered, setIsHovered] = useState(false);
+
   const handleContactClick = () => {
     const element = document.querySelector("#contact");
     if (element) {
@@ -79,11 +83,15 @@ export default function HeroSection() {
             </div>
           </motion.div>
           
-          <div>
+          <div 
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+            className="cursor-pointer"
+          >
             <img 
-              src={playskoolComputer} 
-              alt="Vintage Playskool computer - where it all began" 
-              className="w-full h-auto object-contain rounded-2xl shadow-2xl" 
+              src={isHovered ? playskoolComputerBack : playskoolComputer} 
+              alt={isHovered ? "Playskool computer instructions - how it all works" : "Vintage Playskool computer - where it all began"} 
+              className="w-full h-auto object-contain rounded-2xl shadow-2xl transition-opacity duration-300" 
             />
           </div>
         </div>
