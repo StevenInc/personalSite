@@ -3,6 +3,7 @@ import { ExternalLink, Play } from "lucide-react";
 import mightyMugsScreenshot from "@assets/mighty-mugs-screenshot.png";
 import liveStorefrontsScreenshot from "@assets/live-storefronts-screenshot.png";
 import airGraffitiScreenshot from "@assets/air-graffiti-screenshot-new.png";
+import mapifiedScreenshot from "@assets/mapified-screenshot.png";
 
 export default function ProjectsSection() {
   const projects = [
@@ -78,8 +79,8 @@ export default function ProjectsSection() {
     {
       title: "Mapified.com",
       description: "Map-based classified listing site built before Craigslist added maps, featuring innovative location-based browsing and filtering.",
-      image: "/api/placeholder/400/300",
-      alt: "Mapified.com map-based classified listings platform",
+      image: mapifiedScreenshot,
+      alt: "Mapified.com map-based classified listings platform showing classified ads with map integration",
       year: "2014",
       type: "Demo",
       features: [
