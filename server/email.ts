@@ -21,6 +21,8 @@ export async function sendEmail(params: EmailParams): Promise<boolean> {
   }
 
   try {
+    console.log('Attempting to send email from:', params.from, 'to:', params.to);
+    
     const { data, error } = await resend.emails.send({
       from: params.from,
       to: params.to,
@@ -31,6 +33,8 @@ export async function sendEmail(params: EmailParams): Promise<boolean> {
 
     if (error) {
       console.error('Email sending error:', error);
+      // Log the full error for debugging
+      console.error('Full error details:', JSON.stringify(error, null, 2));
       return false;
     }
 
