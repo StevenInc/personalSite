@@ -31,16 +31,16 @@ export default function AboutSection() {
             </h2>
             <div className="space-y-4 text-slate-300 leading-relaxed">
               <p>
-                I am a seasoned full stack developer with <strong className="text-[var(--portfolio-accent)]">20+ years of experience</strong> delivering dynamic, data-driven applications across enterprise, e-commerce, fintech, and multimedia platforms.
+                I am a seasoned full stack developer with <strong className="text-[var(--portfolio-accent)]">20+ years of experience</strong> delivering dynamic, data-driven applications across enterprise, e-commerce, fintech, and multimedia platforms. As a <strong className="text-[var(--portfolio-success)]">natural team builder</strong>, I excel at fostering collaboration and mentoring developers to achieve shared goals.
               </p>
               <p>
-                As Senior Full Stack Developer at <strong className="text-[var(--portfolio-success)]">Timesheets.com</strong>, I led the development of a VueJS-based calendar scheduling platform using Vue.js 2.x & 3.x, supported by comprehensive Playwright test suites and Cursor AI–assisted workflows.
+                As Senior Full Stack Developer at <strong className="text-[var(--portfolio-success)]">Timesheets.com</strong>, I led cross-functional teams in developing a VueJS-based calendar scheduling platform, <strong className="text-[var(--portfolio-accent)]">mentoring junior developers</strong> and establishing best practices that improved team productivity and code quality.
               </p>
               <p>
-                I've founded and built end-to-end projects including <strong className="text-[var(--portfolio-accent)]">Mapified.com</strong>, <strong className="text-[var(--portfolio-accent)]">LiveStorefronts.com</strong>, and <strong className="text-[var(--portfolio-accent)]">MightMugs.com</strong>, blending software engineering, physical product workflows, and intuitive design.
+                My leadership experience spans founding and building end-to-end projects including <strong className="text-[var(--portfolio-accent)]">Mapified.com</strong>, <strong className="text-[var(--portfolio-accent)]">LiveStorefronts.com</strong>, and <strong className="text-[var(--portfolio-accent)]">MightMugs.com</strong>, where I successfully <strong className="text-[var(--portfolio-success)]">coordinated teams</strong> across software engineering, physical product workflows, and customer experience design.
               </p>
               <p>
-                Additionally, I have experience developing algorithmic trading platforms and have a strong background in electronics, automation, and fabrication with 10 years of thermoforming machinery experience.
+                I thrive in collaborative environments, bringing people together through clear communication, knowledge sharing, and a genuine passion for helping others grow professionally. My experience includes algorithmic trading platforms and electronics automation, always with a focus on building strong, cohesive teams.
               </p>
             </div>
             
