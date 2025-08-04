@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ExternalLink, Play } from "lucide-react";
+import mightyMugsScreenshot from "@assets/mighty-mugs-screenshot.png";
 
 export default function ProjectsSection() {
   const projects = [
@@ -22,8 +23,8 @@ export default function ProjectsSection() {
     {
       title: "MightMugs.com",
       description: "Full-stack e-commerce platform for custom mug design and manufacturing. Integrated dye-sublimation printing workflow with complete fulfillment system.",
-      image: "https://images.unsplash.com/photo-1541167760496-1628856ab772?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=300",
-      alt: "Custom product manufacturing and printing workspace",
+      image: mightyMugsScreenshot,
+      alt: "Mighty Mugs personalized photo mug e-commerce platform with 3D preview technology",
       year: "2007",
       type: "Live",
       features: [
