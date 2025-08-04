@@ -171,8 +171,8 @@ export default function ProjectsSection() {
                 ))}
               </div>
               
-              {/* Gallery Button for MightyMugs and LiveStorefronts */}
-              {(project.title === "MightMugs.com" || project.title === "LiveStorefronts.com") && project.link && (
+              {/* Gallery/Demo Buttons */}
+              {project.link && (project.title === "MightMugs.com" || project.title === "LiveStorefronts.com" || project.title === "Air Graffiti") && (
                 <div className="mt-4 pt-4 border-t border-slate-700">
                   <a 
                     href={project.link} 
@@ -180,8 +180,8 @@ export default function ProjectsSection() {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-4 py-2 bg-[var(--portfolio-success)] text-white rounded-lg hover:bg-[var(--portfolio-success)]/80 transition-colors font-medium"
                   >
-                    <ExternalLink className="h-4 w-4" />
-                    View Gallery
+                    {project.isVideo ? <Play className="h-4 w-4" /> : <ExternalLink className="h-4 w-4" />}
+                    {project.title === "Air Graffiti" ? "View Demo" : "View Gallery"}
                   </a>
                 </div>
               )}
