@@ -32,19 +32,6 @@ export default function ExperienceSection() {
       accentColor: "var(--portfolio-success)"
     },
     {
-      title: "Web Developer / Kiosk Developer",
-      company: "Atomic Imaging",
-      period: "2001 – 2003",
-      description: [
-        "Developed interactive kiosks using Macromedia Director for trade shows and corporate lobbies",
-        "Built ColdFusion and Flash-powered websites for high-profile clients",
-        "Delivered live streaming and video media integrations for multimedia campaigns",
-        "Created engaging multimedia experiences that enhanced client brand presence"
-      ],
-      technologies: ["ColdFusion", "Director", "HTML", "CSS", "JavaScript", "SQL Server", "IIS"],
-      accentColor: "var(--portfolio-purple)"
-    },
-    {
       title: "Latency Reduction Specialist / Frontend Developer",
       company: "Amazon (Project Junglee)",
       period: "Jan 2013 – Dec 2014",
@@ -56,6 +43,19 @@ export default function ExperienceSection() {
       ],
       technologies: ["JavaScript", "Performance", "Shell Scripting"],
       accentColor: "var(--portfolio-warning)"
+    },
+    {
+      title: "Senior Full Stack Developer",
+      company: "Incapital Holdings (now Insperex)",
+      period: "2003 – 2007",
+      description: [
+        "Led development of web-based financial tools for institutional bond traders",
+        "Architected custom online bond laddering calculator for investment advisors",
+        "Developed Black-Scholes based reissue valuation engine for structured products",
+        "Collaborated with financial analysts to convert pricing models into performant web workflows"
+      ],
+      technologies: ["ColdFusion", "Financial Modeling", "Black-Scholes"],
+      accentColor: "var(--portfolio-purple)"
     },
     {
       title: "Frontend Developer",
@@ -85,16 +85,16 @@ export default function ExperienceSection() {
       accentColor: "var(--portfolio-warning)"
     },
     {
-      title: "Senior Full Stack Developer",
-      company: "Incapital Holdings (now Insperex)",
-      period: "2003 – 2007",
+      title: "Web Developer / Kiosk Developer",
+      company: "Atomic Imaging",
+      period: "2001 – 2003",
       description: [
-        "Led development of web-based financial tools for institutional bond traders",
-        "Architected custom online bond laddering calculator for investment advisors",
-        "Developed Black-Scholes based reissue valuation engine for structured products",
-        "Collaborated with financial analysts to convert pricing models into performant web workflows"
+        "Developed interactive kiosks using Macromedia Director for trade shows and corporate lobbies",
+        "Built ColdFusion and Flash-powered websites for high-profile clients",
+        "Delivered live streaming and video media integrations for multimedia campaigns",
+        "Created engaging multimedia experiences that enhanced client brand presence"
       ],
-      technologies: ["ColdFusion", "Financial Modeling", "Black-Scholes"],
+      technologies: ["ColdFusion", "Director", "HTML", "CSS", "JavaScript", "SQL Server", "IIS"],
       accentColor: "var(--portfolio-purple)"
     }
   ];
