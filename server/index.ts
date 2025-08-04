@@ -1,4 +1,5 @@
 import express, { type Request, Response, NextFunction } from "express";
+import path from "path";
 import { registerRoutes } from "./routes";
 import { setupVite, serveStatic, log } from "./vite";
 
@@ -34,6 +35,22 @@ app.use((req, res, next) => {
   });
 
   next();
+});
+
+// Add favicon routes before other middleware to ensure they're handled first
+
+app.get('/favicon.ico', (req, res) => {
+  const faviconPath = path.join(process.cwd(), 'favicon.ico');
+  res.setHeader('Content-Type', 'image/x-icon');
+  res.setHeader('Cache-Control', 'public, max-age=86400');
+  res.sendFile(faviconPath);
+});
+
+app.get('/favicon.svg', (req, res) => {
+  const faviconPath = path.join(process.cwd(), 'favicon.ico');
+  res.setHeader('Content-Type', 'image/x-icon');
+  res.setHeader('Cache-Control', 'public, max-age=86400');
+  res.sendFile(faviconPath);
 });
 
 (async () => {
