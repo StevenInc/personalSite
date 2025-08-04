@@ -4,6 +4,7 @@ import timesheetsScreenshot from "@assets/timesheets-screenshot.png";
 import jungleeScreenshot from "@assets/junglee-screenshot.png";
 import gapScreenshot from "@assets/gap-screenshot.png";
 import incapitalScreenshot from "@assets/incapital-screenshot.png";
+import apartmentsScreenshot from "@assets/apartments-screenshot.png";
 
 export default function ExperienceSection() {
   const experiences = [
@@ -137,7 +138,7 @@ export default function ExperienceSection() {
               >
                 <div className="bg-slate-800 rounded-lg p-6 shadow-xl hover:shadow-2xl transition-all portfolio-card">
                   {/* Special layout for companies with images */}
-                  {(experience.company === "Timesheets.com" || experience.company === "Amazon (Project Junglee)" || experience.company === "The Gap" || experience.company === "Incapital Holdings (now Insperex)") ? (
+                  {(experience.company === "Timesheets.com" || experience.company === "Amazon (Project Junglee)" || experience.company === "The Gap" || experience.company === "Incapital Holdings (now Insperex)" || experience.company === "Apartments.com") ? (
                     <div className="flex flex-col lg:flex-row gap-6">
                       {/* Image on the left */}
                       <div className="lg:w-1/3 flex-shrink-0">
@@ -145,14 +146,17 @@ export default function ExperienceSection() {
                           src={experience.company === "Timesheets.com" ? timesheetsScreenshot : 
                                experience.company === "Amazon (Project Junglee)" ? jungleeScreenshot : 
                                experience.company === "The Gap" ? gapScreenshot :
-                               incapitalScreenshot}
+                               experience.company === "Incapital Holdings (now Insperex)" ? incapitalScreenshot :
+                               apartmentsScreenshot}
                           alt={experience.company === "Timesheets.com" ? 
                             "Timesheets.com scheduling interface showing calendar view" : 
                             experience.company === "Amazon (Project Junglee)" ?
                             "Junglee.com e-commerce platform interface" :
                             experience.company === "The Gap" ?
                             "Gap Inc. website showing diverse fashion models" :
-                            "Incapital LadderBuilder financial tool interface for bond portfolio creation"}
+                            experience.company === "Incapital Holdings (now Insperex)" ?
+                            "Incapital LadderBuilder financial tool interface for bond portfolio creation" :
+                            "Apartments.com rental search interface with interactive map feature"}
                           className="w-full h-auto rounded-lg border border-slate-600 object-contain"
                         />
                       </div>
