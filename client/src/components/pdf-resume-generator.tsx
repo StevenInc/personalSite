@@ -101,6 +101,72 @@ export default function PDFResumeGenerator() {
           "Built dynamic overlays and heatmaps with GIS analysts",
           "Delivered mobile-responsive UI with cross-browser support"
         ]
+      },
+      {
+        title: "Latency Reduction Specialist / Frontend Developer",
+        company: "Amazon (Project Junglee)",
+        period: "Jan 2013 – Dec 2014",
+        highlights: [
+          "Developed cross-domain rating widgets using JSONP and iframe strategies",
+          "Optimized UI latency through image sprites and asset prioritization",
+          "Migrated CoffeeScript to modular JavaScript architecture",
+          "Gained expertise in shell scripting for Linux/Windows environments"
+        ]
+      },
+      {
+        title: "Senior Full Stack Developer",
+        company: "Vemma.com",
+        period: "2010 – 2012",
+        highlights: [
+          "Built multiple international e-commerce platforms",
+          "Architected custom multi-level chart system for recruitment",
+          "Developed in-house accounting tools and financial workflows",
+          "Used ColdFusion and Fusebox framework for maintainable code"
+        ]
+      },
+      {
+        title: "Senior Full Stack Developer",
+        company: "American Express Publishing (Food & Wine)",
+        period: "2007 – 2009",
+        highlights: [
+          "Built ColdFusion app converting recipes to recipeML format",
+          "Led development of wine pairing tool matching wines to recipes",
+          "Created dual versions using ExtJS and native JavaScript",
+          "Utilized Fusebox framework for modular, reusable architecture"
+        ]
+      },
+      {
+        title: "Full Stack Developer",
+        company: "Incapital Holdings (now Insperex)",
+        period: "2003 – 2007",
+        highlights: [
+          "Led development of web-based financial tools for bond traders",
+          "Built custom bond laddering calculator for investment advisors",
+          "Developed Black-Scholes valuation engine for structured products",
+          "Converted complex financial models into performant web workflows"
+        ]
+      },
+      {
+        title: "Full Stack Developer",
+        company: "American Bar Association",
+        period: "2003 (6-month contract)",
+        highlights: [
+          "Built internal web applications for membership and legal education",
+          "Created secure ColdFusion portals for attorney registration",
+          "Designed UI flows ensuring compliance with legal data standards",
+          "Built database-driven dashboards and reporting tools"
+        ]
+      },
+      {
+        title: "Web Developer / Kiosk Developer",
+        company: "Atomic Imaging",
+        period: "2001 – 2003",
+        highlights: [
+          "Developed interactive trade show kiosks using Macromedia Director",
+          "Built ColdFusion and Flash websites for high-profile clients",
+          "Created multimedia presentations and interactive experiences",
+          "Managed full-stack development for corporate lobby installations"
+        ]
       }
     ];
 
