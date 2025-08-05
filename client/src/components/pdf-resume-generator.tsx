@@ -177,8 +177,12 @@ export default function PDFResumeGenerator() {
         y = margin;
       }
 
-      y = addText(`${exp.title} - ${exp.company}`, margin, y + 3, 11, 'bold');
-      y = addText(exp.period, pageWidth - margin - 50, y - 3, 10);
+      // Add job title and company on one line
+      const titleText = `${exp.title} - ${exp.company}`;
+      y = addText(titleText, margin, y + 3, 11, 'bold');
+      
+      // Add period on the next line, indented
+      y = addText(exp.period, margin, y + 1, 10);
       
       exp.highlights.forEach((highlight) => {
         y = addText(`• ${highlight}`, margin + 5, y + 2, 9);
