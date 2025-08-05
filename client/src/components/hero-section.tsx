@@ -3,6 +3,7 @@ import { Mail, Globe, Phone } from "lucide-react";
 import { useState } from "react";
 import playskoolComputer from "@assets/playskool_computer_front_shadow_1754275521975.jpg";
 import playskoolComputerBack from "@assets/playskool_computer_back2_shadow_1754275635519.jpg";
+import PDFResumeGenerator from "./pdf-resume-generator";
 
 export default function HeroSection() {
   const [isHovered, setIsHovered] = useState(false);
@@ -57,6 +58,7 @@ export default function HeroSection() {
               >
                 View Work
               </button>
+              <PDFResumeGenerator />
             </div>
             
             <div className="flex items-center space-x-6">
