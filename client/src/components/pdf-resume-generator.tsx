@@ -64,7 +64,7 @@ export default function PDFResumeGenerator() {
         period: "Jan 2017 – Present",
         highlights: [
           "Architected Vue-based calendar scheduling platform with drag-and-drop UI",
-          "Ported second version to ReactJS using hooks and advanced features",
+          "Ported second version to ReactJS using hooks, functional components, React Router, and Redux",
           "Built reusable components in Vue.js 2.x and 3.x enabling legacy migration",
           "Managed continuous deployment and cloud-based servers using AWS Lightsail",
           "Developed comprehensive Playwright test suites for API and UI testing",

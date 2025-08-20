@@ -21,7 +21,7 @@ export default function ExperienceSection() {
       period: "Jan 2017 – Present",
       description: [
         "Architected a Vue-based calendar scheduling platform with drag-and-drop UI, visual overlays, and role-based access",
-        "Ported second version to ReactJS using hooks and advanced features for enhanced performance and maintainability",
+        "Ported second version to ReactJS using hooks, functional components, React Router, and Redux for enhanced performance and maintainability",
         "Built reusable components in both Vue.js 2.x and Vue.js 3.x, enabling legacy migration and modular reusability",
         "Managed continuous deployment and cloud-based servers using AWS Lightsail for scalable infrastructure",
         "Developed Playwright test suites covering API endpoints, UI flows, visual regressions, and role-specific logic",
