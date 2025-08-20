@@ -16,7 +16,7 @@ import airGraffitiScreenshot from "@assets/air-graffiti-screenshot.png";
 export default function ExperienceSection() {
   const experiences = [
     {
-      title: "Senior Full Stack Developer",
+      title: "Senior Full Stack Developer/Project Manager",
       company: "Timesheets.com",
       period: "Jan 2017 – Present",
       description: [

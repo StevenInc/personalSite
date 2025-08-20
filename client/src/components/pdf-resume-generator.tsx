@@ -59,7 +59,7 @@ export default function PDFResumeGenerator() {
     // Experience data
     const experiences = [
       {
-        title: "Senior Full Stack Developer",
+        title: "Senior Full Stack Developer/Project Manager",
         company: "Timesheets.com",
         period: "Jan 2017 – Present",
         highlights: [

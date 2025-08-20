@@ -39,7 +39,7 @@ export default function HeroSection() {
                 <span className="text-slate-50">Benjamin</span>
               </h1>
               <p className="text-xl md:text-2xl text-[var(--portfolio-text-muted)] font-medium">
-                Senior Full Stack Developer
+                Senior Full Stack Developer/Project Manager
               </p>
               <p className="text-lg text-slate-300 max-w-lg">
                 20+ years crafting dynamic applications with Vue.js, ColdFusion, Python, and modern web technologies. Currently building innovative solutions at Timesheets.com.

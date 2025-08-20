@@ -9,7 +9,7 @@ VERSION:3.0
 FN:Steven Benjamin
 N:Benjamin;Steven;;;
 ORG:Timesheets.com
-TITLE:Senior Full Stack Developer
+TITLE:Senior Full Stack Developer/Project Manager
 EMAIL;TYPE=INTERNET,WORK:me@stevenbenjamin.com
 URL:https://stevenbenjamin.com
 TEL;TYPE=WORK,VOICE:+1-415-324-9035
