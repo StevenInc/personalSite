@@ -21,12 +21,14 @@ export default function ExperienceSection() {
       period: "Jan 2017 – Present",
       description: [
         "Architected a Vue-based calendar scheduling platform with drag-and-drop UI, visual overlays, and role-based access",
+        "Ported second version to ReactJS using hooks and advanced features for enhanced performance and maintainability",
         "Built reusable components in both Vue.js 2.x and Vue.js 3.x, enabling legacy migration and modular reusability",
+        "Managed continuous deployment and cloud-based servers using AWS Lightsail for scalable infrastructure",
         "Developed Playwright test suites covering API endpoints, UI flows, visual regressions, and role-specific logic",
         "Leveraged Cursor AI for test authoring, intelligent refactors, and enhanced team productivity",
         "Mentored junior developers and fostered collaborative team culture across development cycles"
       ],
-      technologies: ["Vue.js", "JavaScript (ES6+)", "ColdFusion", "ColdBox", "Playwright", "Cursor AI"],
+      technologies: ["Vue.js", "React", "JavaScript (ES6+)", "ColdFusion", "ColdBox", "AWS Lightsail", "Playwright", "Cursor AI"],
       accentColor: "var(--portfolio-accent)"
     },
     {
