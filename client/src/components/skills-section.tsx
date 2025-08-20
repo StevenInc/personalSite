@@ -5,8 +5,8 @@ import programmingLanguagesChart from "@assets/programming-languages-chart.png";
 export default function SkillsSection() {
   const frontendSkills = [
     { name: "Vue.js", proficiency: 95 },
-    { name: "Angular", proficiency: 90 },
-    { name: "React", proficiency: 85 },
+    { name: "Angular", proficiency: 70 },
+    { name: "React", proficiency: 90 },
     { name: "JavaScript/TypeScript", proficiency: 95 },
   ];
 
